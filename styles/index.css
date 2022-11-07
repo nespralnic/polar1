@@ -1,0 +1,29 @@
+.container_logo{
+    
+    height: 360px;
+    width: 360px;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 13vh;
+    
+}
+
+.container_logo img {
+    height: 360px;
+    width: 360px;
+    animation: fade_in 2s;
+}
+
+@keyframes fade_in{
+    0% {opacity: 0;
+        transform: translateX(-600px)}
+    20%{transform: translateX(50px);}
+    40%{transform: translateX(0);
+        opacity: 1;}
+    80%{transform:scale(1);}
+    90%{transform:scale(1.05);}
+    100% {}
+}
+
+
