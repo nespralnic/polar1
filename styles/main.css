@@ -5,16 +5,37 @@
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Anton&family=Denk+One&family=Roboto:wght@300&family=Secular+One&display=swap');
+
+/*
+font-family: 'Alatsi', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Denk One', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Secular One', sans-serif;
+*/
+
 :root{
 --logogreen: rgb(25, 75, 51);
 }
-.nav{
+
+/* ---------- N A V B A R --------------*/
+
+.nava{
     height: 120px;
+    background-color: white;
     background: linear-gradient(to bottom, var(--logogreen), rgba(25, 75, 51, 0) );
     position: sticky;
     top:0;
     z-index: 10;
 }
+
+.nav{
+    height: 90px;
+    background-color: white;
+}
+
+/* ---------------- C A R R O U S E L ----------------*/
 
 .carrousel-container{
     position: absolute;
@@ -25,17 +46,47 @@
 }
 
 .carrousel-title{
-    padding: 0;
-    border: 0;
-    margin: 0;
-    line-height: 90%;
     position: relative;
     top: 20%;
-    left: 10vw;
-    color: white;
-    font-size: 180px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 6%;
     z-index: 11;
+    animation: appear 0.3s backwards;
+    animation-delay: 0.2s;
+}
+
+.carrousel-title p{
+    position: relative;
+    line-height: 90%;
+    color: white;
+    width: 500px;
+    font-size: 180px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 550;
+    
+}
+
+
+@keyframes appear {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.carrousel-title-bar{
+    position: absolute;
+    left: 0;
+    top: 21.5%;
+    width: 54px; /*proporcionales*/
+    height: 290px;/*proporcionales*/
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;/*proporcionales*/
+    z-index: 12;
+    animation: pop-left 0.5s;
+}
+
+@keyframes pop-left {
+    0%{width: 0;
+        opacity: 0.6;}
+    40%{width: 80%;}
 }
 
 .carrousel-image{
@@ -47,47 +98,61 @@
 }
 
 #carr1{
-    animation: carr1 19s infinite;
+    animation: carr1 47s infinite;
     }
 
 #carr2{
-    animation: carr2  19s infinite;
+    animation: carr2  47s infinite;
 }
 
 #carr3{
-    animation: carr3 19s infinite;
+    animation: carr3 47s infinite;
 }
 
 #carr4{
-    animation: carr4 19s infinite;
+    animation: carr4 47s infinite;
 }
 
 @keyframes carr1 {
     0%{opacity: 1;}
+    20%{opacity: 1;}
     25%{opacity: 0;}
-    75%{opacity: 0;}
+    95%{opacity: 0;}
     100%{opacity: 1}
 }
 
 @keyframes carr2 {
     0%{opacity: 0;}
+    20%{opacity: 0;}
     25%{opacity: 1;}
+    45%{opacity: 1;}
     50%{opacity: 0;}
+    70%{opacity: 0;}
+    75%{opacity: 0;}
+    95%{opacity: 0;}
     100%{opacity: 0;}
 }
 
 @keyframes carr3 {
     0%{opacity: 0;}
+    20%{opacity: 0;}
     25%{opacity: 0;}
+    45%{opacity: 0;}
     50%{opacity: 1;}
-    75%{opacity:0;}
+    70%{opacity: 1;}
+    75%{opacity: 0;}
+    95%{opacity: 0;}
     100%{opacity: 0;}
 }
 
 @keyframes carr4 {
     0%{opacity: 0;}
+    20%{opacity: 0;}
     25%{opacity: 0;}
+    45%{opacity: 0;}
     50%{opacity: 0;}
+    70%{opacity: 0;}
     75%{opacity: 1;}
+    95%{opacity: 1;}
     100%{opacity: 0;}
 }

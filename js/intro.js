@@ -1,3 +1,3 @@
 setTimeout(()=>{
     window.location="home.html"
-},3000)
+},2200)
