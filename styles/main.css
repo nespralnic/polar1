@@ -16,7 +16,7 @@ font-family: 'Secular One', sans-serif;
 */
 
 :root{
---logogreen: rgb(25, 75, 51);
+--logogreen: rgb(33, 110, 91);
 }
 
 /* ---------- N A V B A R --------------*/
@@ -38,10 +38,10 @@ font-family: 'Secular One', sans-serif;
 /* ---------------- C A R R O U S E L ----------------*/
 
 .carrousel-container{
-    position: absolute;
+    position: relative;
     top:0;
     height: 510px;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -155,4 +155,130 @@ font-family: 'Secular One', sans-serif;
     75%{opacity: 1;}
     95%{opacity: 1;}
     100%{opacity: 0;}
+}
+
+/* -------------- P R E S E N T A T I O N ---------------------*/
+
+.presentation-container {
+    position: relative;    
+    margin: 144px 0 144px 0;
+    background-color:none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+.presentation-background{
+    
+    width: 70%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.presentation-logo{
+
+}
+
+.presentation-logo-img{
+    height: 210px;
+    width: 210px;
+    margin-right: 18px;
+}
+
+.presentation-text{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    border-left: 4px solid var(--logogreen);
+}
+
+.presentation-text p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--logogreen);
+}
+
+.slogan-top{
+    width: 100%;
+    height: 128px;
+    background-color: var(--logogreen); 
+    animation: livingColour 21s infinite;
+}
+
+.slogan-top::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 0 5px 5px white;
+  }
+
+.slogan{
+    background-color: var(--logogreen);
+    animation: livingColour 21s infinite;
+}
+.slogan-inside{
+    width: 70%;
+    height: 510px;
+    border: 10px solid white;
+    background-color: white;
+    box-shadow: 0 0 2px 5px white;
+    margin: 0 auto;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;   
+    opacity: 0.8;
+
+}
+
+.slogan-inside-text{
+    font-size: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Denk One', sans-serif;
+}
+
+.slogan-inside-img{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan-bottom{
+    position: relative;
+    width: 100%;
+    height: 128px;
+    background-color: var(--logogreen);  
+    animation: livingColour 21s infinite;
+    
+}
+
+.slogan-bottom::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 100px;
+    box-shadow: 0 0 5px 5px white;  
+}
+
+@keyframes livingColour {
+    50%{background-color: rgb(60, 197, 197);}    
 }
