@@ -20,16 +20,20 @@ font-family: 'Secular One', sans-serif;
 }
 
 /* ---------- N A V B A R --------------*/
-
+.left-menu-container{
+    width: 60px;
+    height: 300px;
+    background-color: #0c416462;
+}
 .left-menu{
     position: sticky;
-    top: 10vw;
-    left: 5%;
-    width: 600px;
-    height: 90px;
+    top: 10%;
+    left: 0;
+    width: 60px;
+    height: 300px;
     /*background: linear-gradient(to right, rgb(31, 131, 106), rgba(238, 223, 223, 0));*/
     
-    border: 5px solid white;
+    
     border-radius: 5%;
     z-index: 20;
     display: none;
@@ -39,28 +43,35 @@ font-family: 'Secular One', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
+    background-color: var(--logogreen);
     animation: popleft 0.4s forwards;
-    mix-blend-mode: exclusion;
+    /*mix-blend-mode: exclusion;*/
+    /*transform: rotate(270deg);*/
+}
 
+.left-menu-display:hover{
+    background-color: #0c4164;
+    cursor: pointer;
 }
 
 @keyframes popleft {
-    from{transform:translateX(-500px)}
-    to{transform:translateX(-300px)}
+    from{transform: translateX(-500px)}
+    to{transform: translateX(0px)}
 }
 
-.left-menu-empty{
-    width: 40%;
-}
 
 .left-menu-text{
-    font-size: 2em;
-    font-family: 'Secular One', sans-serif;
+    width: 300px;
+    font-size: 1.2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    color: white;
+    font-weight: 600;
+    transform: rotate(270deg) translateY(-120px) translateX(-130px);
     
-    
+
 }
+
 
 .nava{
     height: 120px;
@@ -139,8 +150,10 @@ font-family: 'Secular One', sans-serif;
 .carrousel-image{
     position: absolute;
     top: 0;
-    width: 100%;
-
+    
+    
+    width:100%;
+    height: 100%;
     object-fit:cover;
 }
 
