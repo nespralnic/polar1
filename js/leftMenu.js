@@ -24,17 +24,18 @@ let leftMenu = document.querySelector(".left-menu")
 let leftMenutext = document.querySelector(".left-menu-text")
 
 // secciones participantes
+// ("html tag","message","top start","bottom end")
 let sections = [
-    new Section("destacados","AQUÍ POR MÁS SERVICIOS!",200,700),
+    new Section("destacados","MÁS TRABAJOS!",0,200),
     //new Section("slogan","hola",-100,0),
-    new Section("presentation-container","Barcelona, España.",-300,0)
+    new Section("equipo","Click para BIOs",-100,200)
 ]
 
 
 const toggleActive = (obj) =>{
 
-    console.log(" - position: " + obj.updatePosition())
-    console.log(" - height: "+ obj.updateHeight())
+    //console.log(" - position: " + obj.updatePosition())
+    //console.log(" - height: "+ obj.updateHeight())
     
     const condition = obj.updatePosition() < -obj.top && obj.updatePosition() + obj.updateHeight() > obj.bottom
     obj.active = condition ? true : false

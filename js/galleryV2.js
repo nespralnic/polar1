@@ -91,12 +91,12 @@ let picsBase = [
     "categories": []
     },
     {
-    "id": 16,
+    "id": 19,
     "url": "./img/pelis/red dress.jpg",
     "categories": []
     },
     {
-    "id": 1,
+    "id": 20,
     "url": "./img/pelis/todoparecia.jpg",
     "categories": []
     },
@@ -112,20 +112,17 @@ window.onbeforeunload = () => {
 
 let cardContainer = document.querySelector(".card-container")
 let scrollMax=0;
-let scrolling = false
-let scrollDown = false
 let lengthArray = 10
 //let contadorIntervalo = 0
 
 
 //fetch pictures
-console.log(picsBase);
 let arrayPic = []
 picsBase.forEach(element => {
     arrayPic.push(element.url);
 });
 
-console.log(arrayPic)
+//console.log(arrayPic)
 
 // starting foto delivery
 //let arrayPic = [11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
@@ -186,45 +183,26 @@ displayStartF()
 
 //"light" event
 window.addEventListener('scroll',()=>{
-    scrolling = true
+    for (let index = 0; index < arrayPic.length - setDisplay; index++) {
+        setTimeout( ()=>{
+            if (counterPic < totalPic ){
+                console.log(counterPic +" "+ totalPic);
+                let contenido = document.createElement("div")
+                contenido.classList.add("card","new-card")
+                contenido.innerHTML = deliverPic(arrayPic)
+                cardContainer.appendChild(contenido);
+            }else{
+                //console.log("dentro")
+                let footer = document.querySelector(".card-container-footer")
+                footer.classList.add("change")
+                
+                
+            }
+            },index
+        )   
+    }
 })
 
-// handle event with interval
-const interv = setInterval(() => {
-    
-    //scrolling direction
-    if (window.scrollY > scrollMax){
-        scrollMax = window.scrollY
-        scrollDown = true
-    } else {
-        scrollDown = false
-    }
-
-    
-    if (scrolling && scrollDown) {
-        scrolling = false;
-        //setDisplay completes each row
-        for (let index = 0; index < setDisplay; index++) {
-            setTimeout( ()=>{
-                if (counterPic < totalPic ){
-                    let contenido = document.createElement("div")
-                    contenido.classList.add("card","new-card")
-                    contenido.innerHTML = deliverPic(arrayPic)
-                    cardContainer.appendChild(contenido);
-                    //console.log(counterPic +" "+ totalPic);
-                }else{
-                    //console.log("dentro")
-                    let footer = document.querySelector(".card-container-footer")
-                    footer.classList.add("change")
-                    clearInterval(interv)
-                    
-                }
-                },index*300
-            )   
-        }    
-        
-    } 
-},1200);
 
 
 //---------------- FIN DISPLAY DE CARDS

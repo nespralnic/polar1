@@ -13,6 +13,8 @@ font-family: 'Anton', sans-serif;
 font-family: 'Denk One', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Secular One', sans-serif;
+font-family: 'Encode Sans Condensed', sans-serif;
+font-family: 'Imprima', sans-serif;
 */
 
 :root{
@@ -72,6 +74,28 @@ font-family: 'Secular One', sans-serif;
 
 }
 
+.section-title{
+    
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 64px;
+    padding-top: 50px;
+    padding-left: 87px;
+    color: var(--logogreen);
+    background-color: #0c41641a;
+    position: relative;
+
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    left:-22px;
+    margin-top: 40px;
+    background-color:white;
+    height: 2px;
+    width: 100px;
+    
+}
 
 .nava{
     height: 120px;
@@ -217,6 +241,11 @@ font-family: 'Secular One', sans-serif;
     100%{opacity: 0;}
 }
 
+.carrousel-footer{
+    height: 20vh;
+    background-color: #0c41641a;
+}
+
 /* -------------- P R E S E N T A T I O N ---------------------*/
 
 .presentation-container {
@@ -273,7 +302,7 @@ font-family: 'Secular One', sans-serif;
 
 .destacados {
     position: relative;
-    background-color: black;
+    
     padding-bottom: 60px;
     
 }
@@ -284,8 +313,7 @@ font-family: 'Secular One', sans-serif;
     color: var(--logogreen);
     text-align: center;
     margin: 0 auto; 
-    
-    margin-bottom: 88px;
+    margin-bottom: 48px;
 }
 
 
@@ -296,64 +324,102 @@ font-family: 'Secular One', sans-serif;
     gap: 5px;
 }
 
-
-@media (min-width: 700px) {
+@media (min-width: 350px){
     .card-container{
         grid-template-columns: auto auto;
     }
-}   
+}
 
-@media (min-width: 1050px) {
+@media (min-width: 525px){
     .card-container{
         grid-template-columns: auto auto auto;
     }
-}   
+}
 
-@media (min-width: 1400px) {
+@media (min-width: 700px) {
     .card-container{
         grid-template-columns: auto auto auto auto;
     }
 }   
 
-@media (min-width: 1750px) {
+@media (min-width: 875px){
     .card-container{
         grid-template-columns: auto auto auto auto auto;
     }
-}   
+}
 
-@media (min-width: 2100px) {
+@media (min-width: 1050px) {
     .card-container{
         grid-template-columns: auto auto auto auto auto auto;
     }
 }   
 
-@media (min-width: 2450px) {
+@media (min-width: 1225px) {
     .card-container{
         grid-template-columns: auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 1400px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 1575px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 1750px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 1925px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 2100px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 2275px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+}   
+
+@media (min-width: 2450px) {
+    .card-container{
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     }
 }
 
 .card {
-    height: 420px;
-    width: 340px;
-    background: grey;
+    height: 210px;
+    width: 170px;
+
     border-radius: 8px;
     overflow: hidden;
-    opacity: 0.9;
     
    
 }
 
 .card:hover {
     box-shadow: 0 0 10px 1px white;
-    opacity: 1;
     cursor:pointer;
 
 }
 
 .new-card{
     animation-name: slideUp;
-    animation-duration: 1s;
     animation-duration: 1s;
     visibility: visible;
 }
@@ -372,7 +438,7 @@ font-family: 'Secular One', sans-serif;
 .card-image{
     width: 100%;
     object-fit:contain;
-    
+    opacity: 0.92;
     
   /*
     object-fit:fill;  
@@ -383,6 +449,7 @@ font-family: 'Secular One', sans-serif;
 .card-image:hover{
     transform: scale(1.02);
     transition: 0.2s;
+    opacity: 1;
 }
 
 
@@ -405,11 +472,109 @@ font-family: 'Secular One', sans-serif;
 
 .card-container-footer{
     height: 300px;
-    background-color: salmon;
+    
 }
 
 .change{
     height: 50px;
+}
+
+.card-container-masinfo{
+    width:80%;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.card-container-masinfo-text{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    border: 1px solid var(--logogreen);  
+    padding: 4px;
+    color: var(--logogreen);
+}
+
+.card-container-masinfo-text:hover{
+    border: 1px solid var(--logogreen);  
+    color: white;
+    background-color: var(--logogreen) 
+
+}
+
+
+
+/* ----------- E Q U I P O ----------- */
+
+.equipo{
+
+    background-color: #0c41641a;    
+}
+
+.equipo-container{
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    
+}
+
+.equipo-card{
+    width: 300px;
+    margin: 0 50px;
+}
+
+.equipo-card-img{
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 260px;
+    width: 260px;
+    box-shadow: 0 0 5px 1px var(--logogreen);
+    
+}
+
+.equipo-card-img img{
+    object-fit:cover;
+    object-position: 0 0;   
+}
+
+.equipo-card-nombre{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.equipo-card-descripcion{
+    margin: 5px auto;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.equipo-card-masinfo{
+    width:fit-content;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.equipo-card-masinfo-tag{
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid rgb(124, 123, 123);    
+    border-radius: 8%;
+    padding: 3px;
+    color: gray;
+}
+
+.equipo-card-masinfo-tag:hover{
+    border: 1px solid var(--logogreen);  
+    color: white;
+    background-color: var(--logogreen) 
 }
 
 /* ---------- S L O G A N ------------------*/
@@ -435,6 +600,8 @@ font-family: 'Secular One', sans-serif;
     background-color: var(--logogreen);
     animation: livingColour 21s infinite;
 }
+
+
 .slogan-inside{
     width: 70%;
     height: 510px;
