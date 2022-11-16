@@ -244,6 +244,34 @@ font-family: 'Imprima', sans-serif;
 .carrousel-footer{
     height: 20vh;
     background-color: #0c41641a;
+    overflow: hidden;
+    
+}
+
+.carrousel-footer-slide{
+    width: max-content;
+    
+    
+    animation: slider infinite 23s linear;
+    
+}
+
+@keyframes slider {
+    from {transform: translate(20%);}
+    to {transform: translate(-100%);}
+}
+
+.carrousel-footer-slide span{
+    font-family: 'Secular One', sans-serif;
+    color: var(--logogreen);
+    opacity: 0.3;
+    
+    font-size: 6em;
+    text-shadow: 2px 2px 8px #ffffff;
+}
+
+.carrousel-footer-slide :nth-child(-n+3){
+    margin-right: 18em;
 }
 
 /* -------------- P R E S E N T A T I O N ---------------------*/
