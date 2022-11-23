@@ -12,7 +12,7 @@
 .container_logo img {
     height: 360px;
     width: 360px;
-    animation: fade_in 2s;
+    animation: reel 1.5s;
 }
 
 @keyframes fade_in{
@@ -26,4 +26,9 @@
     100% {}
 }
 
+@keyframes reel {
+    0%{transform: translateX(-50px) rotate(-25deg);}
+    50%{transform: translateX(25px) rotate(10deg);}
+    
+}
 

@@ -4,6 +4,7 @@
     border: 0;
     margin: 0;
     
+    
 }
 
 html {
@@ -21,15 +22,50 @@ font-family: 'Encode Sans Condensed', sans-serif;
 font-family: 'Imprima', sans-serif;
 */
 
+/*    background-color: #0c41641a; */
+
+
 :root{
 --logogreen: rgb(33, 110, 91);
+--salmon: rgb(194, 115, 107);
+--salmon-hov: rgb(235, 164, 156)
+}
+
+.hanging-logo{
+    display:inherit;
+    height: 0;
+    position: sticky;
+    top: 5vh;
+    left: 95vw;
+    z-index: 23999;    
+}
+
+.logo-arriba{
+    position: absolute;
+    left: 92%;
+    height: 80px;
+    width: 80px;
+    z-index: 300;
+    border-radius: 50%;
+    box-shadow: 0 0 10px white;
+    cursor: pointer;
+    transition: 0.4s;
+    animation: appear 3s;
+    opacity: .8;
+}
+
+
+
+.hanging-logo img:hover{
+    transform: rotate(15deg);
+    box-shadow: 0 0 15px white;
 }
 
 /* ---------- N A V B A R --------------*/
 .left-menu-container{
     width: 60px;
     height: 300px;
-    background-color: #0c416462;
+    background-color: var(--salmon);
 }
 .left-menu{
     position: sticky;
@@ -51,12 +87,11 @@ font-family: 'Imprima', sans-serif;
     align-items: center;
     background-color: var(--logogreen);
     animation: popleft 0.4s forwards;
-    /*mix-blend-mode: exclusion;*/
-    /*transform: rotate(270deg);*/
+
 }
 
 .left-menu-display:hover{
-    background-color: #0c4164;
+    background-color: var(--salmon-hov);
     cursor: pointer;
 }
 
@@ -126,60 +161,113 @@ font-family: 'Imprima', sans-serif;
 }
 
 .carrousel-title{
-    position: relative;
+    position: absolute;
     top: 30%;
     left: 6%;
-    z-index: 11;
-    animation: appear 0.3s backwards;
-    animation-delay: 0.2s;
+    z-index: 1202;
+    width: 100%;
+    height: 16em;
 }
 
-.carrousel-title p{
-    position: relative;
-    line-height: 90%;
-    color: white;
-    width: 500px;
-    font-size: 12em;
-    font-family: 'Secular One', sans-serif;
-    font-weight: 550;
+
+.carrousel-title::before{
+    content: '';
+    position: absolute;
+    left: -15%;
+    top: 2%;
+    width: 13%; /*proporcionales*/
+    height: 90%;/*proporcionales*/
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;/*proporcionales*/
+    z-index: 12;
+    animation: pop-left 19.5s infinite;
     
 }
 
-@media (max-width: 1620px) {
-    .carrousel-title p {
-      font-size: 10em;
-    }
+@keyframes pop-left {
+    0%{width: 13%;}
+    2%{width: 100%;}
+    4%{width: 13%;}
+    31%{width: 13%;}
+    33%{width: 100%;}
+    35%{width: 13%;}
+    65%{width: 13%;}
+    67%{width: 100%;}
+    68%{width:13%;}
+
+}
+
+.carrousel-title-text{
+    position: absolute;
+    animation: appear 1s;
+    animation-delay: 0.2;
 }
 
 
 @keyframes appear {
     from{opacity: 0;}
-    to{opacity: 1;}
+    to{opacity: .8;}
 }
 
-.carrousel-title-bar{
-    position: absolute;
-    left: 0;
-    top: 30%;
-    width: 54px; /*proporcionales*/
-    height: 50%;/*proporcionales*/
-    background-color: rgb(255, 255, 255);
-    margin: 6px 0;/*proporcionales*/
-    z-index: 12;
-    animation: pop-left 0.5s;
+.carrousel-title-text p{
+    position: relative;
+    line-height: 90%;
+    color: white;
+    
+    font-size: 9em;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 550;
+    
 }
 
-@keyframes pop-left {
-    0%{width: 0;
-        opacity: 0.6;}
-    40%{width: 80%;}
+.text1{
+    animation: appearText1 19.5s infinite;
+
+}
+.text2{
+    animation: appearText2 19.5s infinite;
+}
+.text3{
+    animation: appearText3 19.5s infinite;
+}
+
+@keyframes appearText1 {
+    0%{opacity: 0;}
+    3%{opacity: 0;}
+    4%{opacity: 1;}
+    32%{opacity: 1;}
+    33%{opacity: 0;}
+    63%{opacity: 0;}
+    66%{opacity: 0;}
+    97%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes appearText2 {
+    0%{opacity: 0;}
+    33%{opacity: 0;}
+    34%{opacity: 1;}
+    65%{opacity: 1;}
+    66%{opacity: 0;}
+    97%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+@keyframes appearText3 {
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    33%{opacity: 0;}
+    63%{opacity: 0;}
+    66%{opacity: 0;}
+    67%{opacity: 1;}
+    97%{opacity: 1;}
+    100%{opacity: 1;}
+
 }
 
 .carrousel-image{
     position: absolute;
     top: 0;
-    
-    
     width:100%;
     height: 100%;
     object-fit:cover;
@@ -249,7 +337,7 @@ font-family: 'Imprima', sans-serif;
 .carrousel-arrow{
     z-index: 25;
     position: relative;
-    opacity: 0.5;
+    opacity: 0.7;
     width: 100%;
     
 }
@@ -260,17 +348,17 @@ font-family: 'Imprima', sans-serif;
     top: 30px;
     height: 80px;
     width: 80px;
-    animation: appearAfterSlide forwards 25s;
+    animation: appearAfterSlide forwards 3s;
 }
 
 .carrousel-arrow:hover{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 @keyframes appearAfterSlide {
     0%{opacity: 0;}
     96%{opacity: 0;}
-    100%{opacity: 0.3;}
+    100%{opacity: 1;}
     
 }
 
@@ -281,42 +369,87 @@ font-family: 'Imprima', sans-serif;
     
 }
 
-.carrousel-footer-slide{
-    width: max-content;
-    animation: slider linear 19s;
-    transform: translate(-86.8%);
+/* ------------- P A R A L L A X ------------------------*/
+/* 
+/* https://alvarotrigo.com/blog/how-to-create-a-parallax-effect-with-css-only/ */
+
+
+
+.parallax-container{
+    
+    
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-@keyframes slider {
-    from {transform: translate(20%);}
+.parallax-container::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, black, transparent);
+    z-index: 1000;
+    mix-blend-mode: color;
 }
 
-.carrousel-footer-slide span{
-    font-family: 'Secular One', sans-serif;
-    font-family: 'Encode Sans Condensed', sans-serif;
+.parallax-container img{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+
+.parallax-text{
+    z-index: 1001;
+    display: flex;
+}
+
+
+.parallax-text-left{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 7em;
     font-weight: 600;
-    color: var(--logogreen);
-    opacity: 0.3;
-    
-    font-size: 6em;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 18px;
 }
 
-.carrousel-footer-slide :nth-child(-n+3){
-    margin-right: 14em;
+.parallax-text-left p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: right;  
+    text-shadow: 0 0 3px black ;
 }
 
-.carrousel-footer-slide-last{
-    animation: marquesine 5s forwards;
-    animation-delay: 19s;
+.parallax-text-right{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 7em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    border-left: 4px solid wheat;
 }
 
-@keyframes marquesine {
-    50%{text-shadow: 0 0 10px rgb(255, 255, 255);
-        color:  rgb(28, 158, 136);}
-    90%{opacity: 0.3;}
-    100%{opacity: 0;}
+.parallax-text-right p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 0 0 3px black ;
 }
+
+*/
 
 
 /* -------------- P R E S E N T A T I O N ---------------------*/
@@ -436,9 +569,11 @@ font-family: 'Imprima', sans-serif;
 @media (min-width: 1400px) {
     .card-container{
         grid-template-columns: auto auto auto auto auto auto auto auto;
+        width: 100%;
+        margin: 0 auto;
     }
 }   
-
+/*
 @media (min-width: 1575px) {
     .card-container{
         grid-template-columns: auto auto auto auto auto auto auto auto auto;
@@ -448,8 +583,10 @@ font-family: 'Imprima', sans-serif;
 @media (min-width: 1750px) {
     .card-container{
         grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+        
     }
 }   
+
 
 @media (min-width: 1925px) {
     .card-container{
@@ -475,6 +612,7 @@ font-family: 'Imprima', sans-serif;
     }
 }
 
+*/
 .card {
     height: 210px;
     width: 170px;
@@ -579,8 +717,12 @@ font-family: 'Imprima', sans-serif;
 /* ----------- E Q U I P O ----------- */
 
 .equipo{
-
+    height: 90vh;
     background-color: #0c41641a;    
+}
+
+.title-equipo{
+    padding-top: 150px;
 }
 
 .equipo-container{
@@ -600,11 +742,26 @@ font-family: 'Imprima', sans-serif;
 .equipo-card-img{
     margin: 0 auto;
     border-radius: 50%;
-    height: 260px;
-    width: 260px;
-    box-shadow: 0 0 5px 1px var(--logogreen);
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 0 5px 3px var(--logogreen);
+    position: relative;
+    z-index: 21;
     
 }
+
+.equipo-card-img::before{
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -25%;
+    border-radius: 50px 50px  0 0;
+    height: 176px;
+    width: 150%;
+    background-color:var(--logogreen);
+    z-index: 20;
+}
+
 
 .equipo-card-img img{
     object-fit:cover;
@@ -614,7 +771,7 @@ font-family: 'Imprima', sans-serif;
 .equipo-card-nombre{
     font-family: 'Encode Sans Condensed', sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.8em;
     font-weight: 600;
     margin: auto;
     margin-top: 8px;
@@ -652,80 +809,46 @@ font-family: 'Imprima', sans-serif;
 
 /* ---------- S L O G A N ------------------*/
 
-.slogan-top{
-    width: 100%;
-    height: 128px;
-    background-color: var(--logogreen); 
-    animation: livingColour 21s infinite;
-}
-
-.slogan-top::before {
-    content: "";
-    position: absolute;
-    background-color: white;
-    height: 50px;
-    width: 100%;
-    border-bottom-right-radius: 100px;
-    box-shadow: 0 0 5px 5px white;
-  }
 
 .slogan{
-    background-color: var(--logogreen);
-    animation: livingColour 21s infinite;
+    background-color: var(--salmon-hov);
+    position: relative;
+}
+
+.slogan::before{
+    content:'';
+    background-image: url('../img/giraffe.png');
+    color: white;
+    background-size:contain;
+    background-repeat:no-repeat;
+    
+    position: absolute;
+    height: 680px;
+    width: 600px;
+    top:50px;
+    left: 55%;
+    opacity: .3;
 }
 
 
-.slogan-inside{
+
+.slogan-inside{ 
     width: 70%;
-    height: 510px;
-    border: 10px solid white;
-    background-color: white;
-    box-shadow: 0 0 2px 5px white;
+    height: 710px;
     margin: 0 auto;
     border-radius: 12px;
     display: flex;
-    justify-content: center;   
+    padding-left: 5%;  
     opacity: 0.8;
 
 }
 
 .slogan-inside-text{
-    font-size: 39px;
+    font-size: 3.2em;
     display: flex;
+    color: white;
     flex-direction: column;
     justify-content: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: 'Denk One', sans-serif;
+    font-family: 'Encode Sans Condensed', sans-serif;
 }
 
-.slogan-inside-img{
-    
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.slogan-bottom{
-    position: relative;
-    width: 100%;
-    height: 128px;
-    background-color: var(--logogreen);  
-    animation: livingColour 21s infinite;
-    
-}
-
-.slogan-bottom::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    background-color: white;
-    height: 50px;
-    width: 100%;
-    border-top-left-radius: 100px;
-    box-shadow: 0 0 5px 5px white;  
-}
-
-@keyframes livingColour {
-    50%{background-color: rgb(60, 197, 197);}    
-}

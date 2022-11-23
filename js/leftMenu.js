@@ -26,7 +26,7 @@ let leftMenutext = document.querySelector(".left-menu-text")
 // secciones participantes
 // ("html tag","message","top start","bottom end")
 let sections = [
-    new Section("destacados","MÁS TRABAJOS!",0,200),
+    new Section("destacados","MÁS TRABAJOS!",0,400),
     //new Section("slogan","hola",-100,0),
     new Section("equipo","Click para BIOs",-100,200)
 ]

@@ -130,10 +130,12 @@ let counterPic = 0;
 let totalPic = arrayPic.length
 
 function deliverPic(arrayPic){
-    let x = arrayPic[counterPic]
-    counterPic+=1
-    return `<img src="${x}" alt="" class="card-image"></img>`
-}
+    
+        let x = arrayPic[counterPic]
+        counterPic+=1
+        return `<img src="${x}" alt="" class="card-image"></img>`
+    }
+
 
 
 
@@ -143,12 +145,12 @@ function displayStartF(){
     let initialWidth = window.innerWidth
 
     switch (true) {
-        case initialWidth > 2450 : setDisplay = 14; break;
+        /*case initialWidth > 2450 : setDisplay = 14; break;
         case initialWidth > 2275 : setDisplay = 13; break;
         case initialWidth > 2100 : setDisplay = 12; break;
         case initialWidth > 1925 : setDisplay = 11; break;
         case initialWidth > 1750 : setDisplay = 10; break;
-        case initialWidth > 1675 : setDisplay = 9; break;
+        case initialWidth > 1675 : setDisplay = 9; break;*/
         case initialWidth > 1400 : setDisplay = 8; break;
         case initialWidth > 1225 : setDisplay = 7; break;
         case initialWidth > 1050 : setDisplay = 6; break;
@@ -162,12 +164,29 @@ function displayStartF(){
     }
 
     
-    for (let index = 0; index < setDisplay; index++) {
+    for (let index = 0; index < setDisplay*2; index++) {
         setTimeout(()=>{
             let contenido = document.createElement("div")
             contenido.classList.add("card","new-card")
             contenido.innerHTML = deliverPic(arrayPic)
             cardContainer.appendChild(contenido);
+            if (index == (setDisplay*2)-1){
+                let footer = document.querySelector(".card-container-footer")
+                footer.classList.add("change")
+            }
+        },index*200)
+        
+    }
+}
+
+function displayAll(){
+    for (let index = 0; index < arrayPic.length; index++) {
+        setTimeout(()=>{
+            let contenido = document.createElement("div")
+            contenido.classList.add("card","new-card")
+            contenido.innerHTML = deliverPic(arrayPic)
+            cardContainer.appendChild(contenido);
+        
         },index*200)
         
     }
@@ -175,34 +194,7 @@ function displayStartF(){
 
 //MAIN
 //print 2 complete rows of initial cards depending on viewport size
-displayStartF()
+displayAll()
 
 
 
-
-
-//"light" event
-window.addEventListener('scroll',()=>{
-    for (let index = 0; index < arrayPic.length - setDisplay; index++) {
-        setTimeout( ()=>{
-            if (counterPic < totalPic ){
-                console.log(counterPic +" "+ totalPic);
-                let contenido = document.createElement("div")
-                contenido.classList.add("card","new-card")
-                contenido.innerHTML = deliverPic(arrayPic)
-                cardContainer.appendChild(contenido);
-            }else{
-                //console.log("dentro")
-                let footer = document.querySelector(".card-container-footer")
-                footer.classList.add("change")
-                
-                
-            }
-            },index
-        )   
-    }
-})
-
-
-
-//---------------- FIN DISPLAY DE CARDS
