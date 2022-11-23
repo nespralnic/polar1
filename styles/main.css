@@ -26,13 +26,25 @@ font-family: 'Imprima', sans-serif;
 
 
 :root{
---logogreen: rgb(33, 110, 91);
+--logogreen: rgb(63, 129, 114);
+--logogreenfirst: rgb(33, 110, 91);
 --salmon: rgb(194, 115, 107);
---salmon-hov: rgb(235, 164, 156)
+--salmon-hov: rgb(235, 164, 156);
+
+/*paletadecolores.com.ar*/
+
+--col1: #7b7d83;
+--col2: #babbbe;
+--col3: #404144; /*footer*/
+--col4: #5b847c;
+--col5: #b9babd;
+
+--col6: #5b847c;
+--col7: #845b63;
+--col8: #675b84;
 }
 
 .hanging-logo{
-    display:inherit;
     height: 0;
     position: sticky;
     top: 5vh;
@@ -62,36 +74,48 @@ font-family: 'Imprima', sans-serif;
 }
 
 /* ---------- N A V B A R --------------*/
-.left-menu-container{
-    width: 60px;
-    height: 300px;
-    background-color: var(--salmon);
-}
+
 .left-menu{
     position: sticky;
-    top: 10%;
-    left: 0;
-    width: 60px;
-    height: 300px;
+    
     /*background: linear-gradient(to right, rgb(31, 131, 106), rgba(238, 223, 223, 0));*/
-    
-    
+    height: 0;
+    width: 0;
     border-radius: 5%;
     z-index: 20;
     display: none;
 }
 
+.left-menu-container{
+    width: 60px;
+    height: 300px;
+    background-color: var(--col3);
+}
+
+
 .left-menu-display{
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 37%;
+    left: 15px;
     background-color: var(--logogreen);
-    animation: popleft 0.4s forwards;
-
+    transform: translateX(-500px);
+    transition: transform .5s;
 }
 
-.left-menu-display:hover{
-    background-color: var(--salmon-hov);
+.left-menu-appear{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--logogreen);
+    transform: translate(0px);
+    transition: transform .5s;
+}
+
+.left-menu-container:hover{
+    background-color: var(--col1);
     cursor: pointer;
 }
 
@@ -99,6 +123,7 @@ font-family: 'Imprima', sans-serif;
     from{transform: translateX(-500px)}
     to{transform: translateX(0px)}
 }
+
 
 
 .left-menu-text{
@@ -744,7 +769,7 @@ font-family: 'Imprima', sans-serif;
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    box-shadow: 0 0 5px 3px var(--logogreen);
+    box-shadow: 0 0 5px 3px var(--col6);
     position: relative;
     z-index: 21;
     
@@ -758,7 +783,7 @@ font-family: 'Imprima', sans-serif;
     border-radius: 50px 50px  0 0;
     height: 176px;
     width: 150%;
-    background-color:var(--logogreen);
+    background-color:var(--col6);
     z-index: 20;
 }
 
@@ -802,20 +827,20 @@ font-family: 'Imprima', sans-serif;
 }
 
 .equipo-card-masinfo-tag:hover{
-    border: 1px solid var(--logogreen);  
+    border: 1px solid var(--col6);  
     color: white;
-    background-color: var(--logogreen) 
+    background-color: var(--col6) 
 }
 
 /* ---------- S L O G A N ------------------*/
 
 
 .slogan{
-    background-color: var(--salmon-hov);
+    background-color: var(--col6);
     position: relative;
 }
 
-.slogan::before{
+.slogan-img{
     content:'';
     background-image: url('../img/giraffe.png');
     color: white;
@@ -833,12 +858,11 @@ font-family: 'Imprima', sans-serif;
 
 
 .slogan-inside{ 
-    width: 70%;
     height: 710px;
     margin: 0 auto;
     border-radius: 12px;
     display: flex;
-    padding-left: 5%;  
+    padding-left: 8%;  
     opacity: 0.8;
 
 }
