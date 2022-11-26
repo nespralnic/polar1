@@ -4,13 +4,20 @@ let giraffe = document.querySelector('.slogan-img')
 //get initial giraffe y
 let giraffeHeight = giraffe.getBoundingClientRect().height
 
+
 window.addEventListener('scroll', ()=>{
-    let value = window.scrollY
-    parallaxBg.style.top = value * -0.3 + 'px';
+    let topCorrection = parallaxBg.getBoundingClientRect().top
+
+        parallaxBg.style.top = topCorrection * -0.3 + 'px';
+        console.log( topCorrection);
+    
+    
+    
+    
     let activeGiraffe = (giraffe.getBoundingClientRect().top - giraffe.getBoundingClientRect().height  )*-1
     
     if ( activeGiraffe > 0 && activeGiraffe < giraffeHeight ){
-        giraffe.style.left = 55 + activeGiraffe * -0.005 + '%';
+        giraffe.style.right = activeGiraffe * 0.007 + '%';
     }
     
 })

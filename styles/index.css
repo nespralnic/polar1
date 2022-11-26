@@ -10,8 +10,8 @@
 }
 
 .container_logo img {
-    height: 360px;
-    width: 360px;
+    height: 320px;
+    width: 320px;
     animation: reel 1.5s;
 }
 

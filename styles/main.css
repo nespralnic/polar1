@@ -44,17 +44,20 @@ font-family: 'Imprima', sans-serif;
 --col8: #675b84;
 }
 
+/* ---------- G E N E R A L --------------*/
+
+
 .hanging-logo{
     height: 0;
     position: sticky;
-    top: 5vh;
-    left: 95vw;
+    right: 20px;
+    top: 20px;
     z-index: 23999;    
 }
 
 .logo-arriba{
     position: absolute;
-    left: 92%;
+    right: 20px;
     height: 80px;
     width: 80px;
     z-index: 300;
@@ -67,13 +70,12 @@ font-family: 'Imprima', sans-serif;
 }
 
 
-
 .hanging-logo img:hover{
     transform: rotate(15deg);
     box-shadow: 0 0 15px white;
 }
 
-/* ---------- N A V B A R --------------*/
+
 
 .left-menu{
     position: sticky;
@@ -82,7 +84,7 @@ font-family: 'Imprima', sans-serif;
     height: 0;
     width: 0;
     border-radius: 5%;
-    z-index: 20;
+    z-index: 2000;
     display: none;
 }
 
@@ -141,39 +143,104 @@ font-family: 'Imprima', sans-serif;
 .section-title{
     
     font-family: 'Encode Sans Condensed', sans-serif;
-    font-size: 64px;
-    padding-top: 50px;
-    padding-left: 87px;
+    font-size: 40px;
+    padding-left: 70px;
     color: var(--logogreen);
     background-color: #0c41641a;
     position: relative;
+    width: 100%;
 
 }
 
 .section-title::before{
     content: "";
     position: absolute;
-    left:-22px;
-    margin-top: 40px;
+    left:-32px;
+    margin-top: 26px;
     background-color:white;
     height: 2px;
     width: 100px;
     
 }
 
-.nava{
-    height: 120px;
-    background-color: white;
-    background: linear-gradient(to bottom, var(--logogreen), rgba(25, 75, 51, 0) );
-    position: sticky;
-    top:0;
-    z-index: 10;
+/* GENERAL media querys*/
+
+@media (min-width: 350px){
+
 }
 
-.nav{
-    height: 90px;
-    background-color: white;
+@media (min-width: 525px){
+
 }
+
+@media (min-width: 700px) {
+    .section-title{
+    
+        font-family: 'Encode Sans Condensed', sans-serif;
+        font-size: 64px;
+        padding-left: 87px;
+        color: var(--logogreen);
+        background-color: #0c41641a;
+        position: relative;
+    
+    }
+    
+    .section-title::before{
+        content: "";
+        position: absolute;
+        left:-22px;
+        margin-top: 40px;
+        background-color:white;
+        height: 2px;
+        width: 100px;
+        
+    }
+}   
+
+@media (min-width: 875px){
+ 
+}
+
+@media (min-width: 1050px) {
+
+}   
+
+@media (min-width: 1225px) {
+
+}   
+
+@media (min-width: 1400px) {
+
+}   
+/*
+@media (min-width: 1575px) {
+
+}   
+
+@media (min-width: 1750px) {
+
+}   
+
+
+@media (min-width: 1925px) {
+
+}   
+
+@media (min-width: 2100px) {
+
+}   
+
+@media (min-width: 2275px) {
+   
+}   
+
+@media (min-width: 2450px) {
+   
+}
+
+*/
+
+
 
 /* ---------------- C A R R O U S E L ----------------*/
 
@@ -187,11 +254,12 @@ font-family: 'Imprima', sans-serif;
 
 .carrousel-title{
     position: absolute;
-    top: 30%;
+    bottom: 15%;
     left: 6%;
     z-index: 1202;
     width: 100%;
-    height: 16em;
+    height: 6em;
+    line-height: 90%;
 }
 
 
@@ -199,11 +267,11 @@ font-family: 'Imprima', sans-serif;
     content: '';
     position: absolute;
     left: -15%;
-    top: 2%;
+    line-height: 90%;
     width: 13%; /*proporcionales*/
-    height: 90%;/*proporcionales*/
+    height: 4.7em;/*proporcionales*/
     background-color: rgb(255, 255, 255);
-    margin: 6px 0;/*proporcionales*/
+    margin: 0;/*proporcionales*/
     z-index: 12;
     animation: pop-left 19.5s infinite;
     
@@ -239,11 +307,12 @@ font-family: 'Imprima', sans-serif;
     line-height: 90%;
     color: white;
     
-    font-size: 9em;
+    font-size: 2.6em;
     font-family: 'Secular One', sans-serif;
     font-weight: 550;
     
 }
+
 
 .text1{
     animation: appearText1 19.5s infinite;
@@ -362,22 +431,29 @@ font-family: 'Imprima', sans-serif;
 .carrousel-arrow{
     z-index: 25;
     position: relative;
-    opacity: 0.7;
-    width: 100%;
     
+    width: 100%;   
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c41641a;
 }
 
 .carrousel-arrow img{
-    position: absolute;
-    right: 48%;
-    top: 30px;
-    height: 80px;
-    width: 80px;
+    margin: 20% auto;
+    height: 40px;
+    width: 40px;
     animation: appearAfterSlide forwards 3s;
+    
 }
 
-.carrousel-arrow:hover{
-    opacity: 0.9;
+.carrousel-arrow a{
+    opacity: .5;
+}
+
+.carrousel-arrow a:hover{
+    opacity: .7;
 }
 
 @keyframes appearAfterSlide {
@@ -388,143 +464,140 @@ font-family: 'Imprima', sans-serif;
 }
 
 .carrousel-footer{
-    height: 20vh;
     background-color: #0c41641a;
     overflow: hidden;
     
 }
 
-/* ------------- P A R A L L A X ------------------------*/
-/* 
-/* https://alvarotrigo.com/blog/how-to-create-a-parallax-effect-with-css-only/ */
+/* carrousel  media querys */
 
 
+@media (min-width: 350px){
+    .carrousel-title{
+        position: absolute;
+        bottom: 15%;
+        left: 6%;
+        z-index: 1202;
+        width: 100%;
+        
+    }
 
-.parallax-container{
+    .carrousel-title-text p{
+        position: relative;
+        line-height: 90%;
+        color: white;
+        font-size: 2.6em;
+        font-family: 'Secular One', sans-serif;
+        font-weight: 550;
+        
+    }
+}
+
+@media (min-width: 525px){
+    .carrousel-title::before{
+        width: 13%; /*proporcionales*/
+        height: 6em;/*proporcionales*/
+    }
+    .carrousel-title-text p{
+        font-size: 3.5em;        
+    }
+}
+
+@media (min-width: 700px) {
+    .carrousel-title::before{
+        width: 13%; /*proporcionales*/
+        height: 7.6em;/*proporcionales*/
+    }
+    .carrousel-title-text p{
+        font-size: 4.4em;        
+    }
     
+    .carrousel-arrow img{
+        height: 65px;
+        width: 65px;
     
-    position:relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    }
+
+}   
+
+@media (min-width: 875px){
+
+    .carrousel-title{
+        bottom: 27%;
+    }
+    .carrousel-title::before{
+        width: 13%; /*proporcionales*/
+        height: 9.6em;/*proporcionales*/
+    }
+    .carrousel-title-text p{
+        font-size: 5.5em;        
+        
+    } 
+}
+
+@media (min-width: 1050px) {
     
-}
+    .carrousel-title{
+        bottom: 30%;
+    }
+    .carrousel-title::before{
+        width: 13%; /*proporcionales*/
+        height: 11em;/*proporcionales*/
+    }
+    .carrousel-title-text p{
+        font-size: 6.6em;        
+    } 
+}   
 
-.parallax-container::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, transparent, black, transparent);
-    z-index: 1000;
-    mix-blend-mode: color;
-}
+@media (min-width: 1225px) {
+    .carrousel-title{
+        bottom: 36%;
+    }
+    .carrousel-title::before{
+        width: 13%; /*proporcionales*/
+        height: 13.4em;/*proporcionales*/
+    }
+    .carrousel-title-text p{
+        font-size: 7.7em;        
+    } 
+}   
 
-.parallax-container img{
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    object-fit: contain;
-    pointer-events: none;
-}
+@media (min-width: 1400px) {
+    .carrousel-title{
+        bottom: 36%;
+    }
+    .carrousel-title::before{
+        width: 13%; /*proporcionales*/
+        height: 15em;/*proporcionales*/
+    }
+    .carrousel-title-text p{
+        font-size: 8.8em;        
+    } 
+}   
+/*
+@media (min-width: 1575px) {
 
+}   
 
-.parallax-text{
-    z-index: 1001;
-    display: flex;
-}
+@media (min-width: 1750px) {
 
-
-.parallax-text-left{
-    font-family: 'Alatsi', sans-serif;
-    font-size: 7em;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 18px;
-}
-
-.parallax-text-left p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-align: right;  
-    text-shadow: 0 0 3px black ;
-}
-
-.parallax-text-right{
-    font-family: 'Alatsi', sans-serif;
-    font-size: 7em;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 18px;
-    border-left: 4px solid wheat;
-}
-
-.parallax-text-right p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-shadow: 0 0 3px black ;
-}
-
-*/
+}   
 
 
-/* -------------- P R E S E N T A T I O N ---------------------*/
+@media (min-width: 1925px) {
 
-.presentation-container {
-    position: relative;    
-    margin: 144px 0 144px 0;
-    background-color:none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  
-.presentation-background{
-    
-    width: 70%;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    
-    
-}
+}   
 
+@media (min-width: 2100px) {
 
-.presentation-logo{
+}   
 
-}
+@media (min-width: 2275px) {
+   
+}   
 
-.presentation-logo-img{
-    height: 210px;
-    width: 210px;
-    margin-right: 18px;
-}
-
-.presentation-text{
-    font-family: 'Alatsi', sans-serif;
-    font-size: 52px;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 18px;
-    border-left: 4px solid var(--logogreen);
-}
-
-.presentation-text p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--logogreen);
+@media (min-width: 2450px) {
+   
 }
 
 
@@ -532,8 +605,7 @@ font-family: 'Imprima', sans-serif;
 
 
 .destacados {
-    position: relative;
-    
+    position: relative;    
     padding-bottom: 60px;
     
 }
@@ -739,29 +811,275 @@ font-family: 'Imprima', sans-serif;
 
 
 
+
+/* ------------- P A R A L L A X ------------------------*/
+/* 
+/* https://alvarotrigo.com/blog/how-to-create-a-parallax-effect-with-css-only/ */
+
+
+
+.parallax-container{
+    
+    
+    position:relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parallax-container::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, black, transparent);
+    z-index: 1000;
+    mix-blend-mode: color;
+}
+
+.parallax-container img{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.parallax-text{
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.parallax-text-left{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    border-left: 4px solid wheat;
+}
+
+.parallax-text-left p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+      
+    text-shadow: 0 0 3px black ;
+}
+
+.parallax-text-right{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    border-left: 4px solid wheat;
+}
+
+.parallax-text-right p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 0 0 3px black ;
+}
+
+.parallax-footer{
+    height: 80px;
+    background-color: #0c41641a; 
+}
+
+@media (min-width: 350px){
+
+}
+
+@media (min-width: 525px){
+
+}
+
+@media (min-width: 700px) {
+    
+}   
+
+@media (min-width: 875px){
+}
+
+@media (min-width: 1050px) {
+    .parallax-text{
+        z-index: 1001;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    
+    .parallax-text-left{
+        font-family: 'Alatsi', sans-serif;
+        font-size: 7em;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 18px;
+        border-left: 0;
+    }
+    
+    .parallax-text-left p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-align: right;  
+        text-shadow: 0 0 3px black ;
+    }
+    
+    .parallax-text-right{
+        font-family: 'Alatsi', sans-serif;
+        font-size: 7em;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 18px;
+        border-left: 4px solid wheat;
+    }
+    
+    .parallax-text-right p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-shadow: 0 0 3px black ;
+    }
+    
+}   
+
+@media (min-width: 1225px) {
+
+}   
+
+@media (min-width: 1400px) {
+
+}   
+/*
+@media (min-width: 1575px) {
+
+}   
+
+@media (min-width: 1750px) {
+
+}   
+
+
+@media (min-width: 1925px) {
+
+}   
+
+@media (min-width: 2100px) {
+
+}   
+
+@media (min-width: 2275px) {
+   
+}   
+
+@media (min-width: 2450px) {
+   
+}
+
+
+
+*/
+
+
+/* -------------- P R E S E N T A T I O N ---------------------*/
+
+.presentation-container {
+    position: relative;    
+    margin: 144px 0 144px 0;
+    background-color:none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+.presentation-background{
+    
+    width: 70%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.presentation-logo{
+
+}
+
+.presentation-logo-img{
+    height: 210px;
+    width: 210px;
+    margin-right: 18px;
+}
+
+.presentation-text{
+    font-family: 'Alatsi', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+    border-left: 4px solid var(--logogreen);
+}
+
+.presentation-text p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--logogreen);
+}
+
+
+
+
 /* ----------- E Q U I P O ----------- */
 
-.equipo{
-    height: 90vh;
-    background-color: #0c41641a;    
+.title-equipo{
+   
+    width: 100%;
 }
 
-.title-equipo{
-    padding-top: 150px;
+.equipo{
+    
+    background-color: #0c41641a;   
+
+    
 }
+
+
 
 .equipo-container{
     display: flex;
-    width: fit-content;
     margin: 0 auto;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+
     
 }
 
 .equipo-card{
-    width: 300px;
-    margin: 0 50px;
+    width: 285px;
+    height: 460px;
+    
 }
 
 .equipo-card-img{
@@ -778,11 +1096,11 @@ font-family: 'Imprima', sans-serif;
 .equipo-card-img::before{
     content: '';
     position: absolute;
-    top: -20%;
-    left: -25%;
+    top: -8%;
+    left: -10%;
     border-radius: 50px 50px  0 0;
-    height: 176px;
-    width: 150%;
+    height: 146px;
+    width: 120%;
     background-color:var(--col6);
     z-index: 20;
 }
@@ -796,7 +1114,7 @@ font-family: 'Imprima', sans-serif;
 .equipo-card-nombre{
     font-family: 'Encode Sans Condensed', sans-serif;
     text-align: center;
-    font-size: 2.8em;
+    font-size: 2.6em;
     font-weight: 600;
     margin: auto;
     margin-top: 8px;
@@ -806,7 +1124,7 @@ font-family: 'Imprima', sans-serif;
     margin: 5px auto;
     font-family: 'Encode Sans Condensed', sans-serif;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     
 }
 
@@ -832,6 +1150,70 @@ font-family: 'Imprima', sans-serif;
     background-color: var(--col6) 
 }
 
+
+@media (min-width: 350px){
+
+}
+
+@media (min-width: 525px){
+
+}
+
+@media (min-width: 700px) {
+
+}   
+
+@media (min-width: 875px){
+    
+.equipo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: 1050px) {
+
+}   
+
+@media (min-width: 1225px) {
+
+}   
+
+@media (min-width: 1400px) {
+    .equipo-container{
+        width: 85%;
+    }
+}   
+/*
+@media (min-width: 1575px) {
+
+}   
+
+@media (min-width: 1750px) {
+
+}   
+
+
+@media (min-width: 1925px) {
+
+}   
+
+@media (min-width: 2100px) {
+
+}   
+
+@media (min-width: 2275px) {
+   
+}   
+
+@media (min-width: 2450px) {
+   
+}
+
+
+
 /* ---------- S L O G A N ------------------*/
 
 
@@ -848,31 +1230,108 @@ font-family: 'Imprima', sans-serif;
     background-repeat:no-repeat;
     
     position: absolute;
-    height: 680px;
-    width: 600px;
-    top:50px;
-    left: 55%;
-    opacity: .3;
+    height: 400px;
+    width: 400px;
+    bottom: 24%;
+    right: 5%;
+    opacity: .1;
 }
 
 
 
 .slogan-inside{ 
-    height: 710px;
+    height: 600px;
     margin: 0 auto;
     border-radius: 12px;
     display: flex;
     padding-left: 8%;  
     opacity: 0.8;
+    position: relative;
 
 }
 
 .slogan-inside-text{
-    font-size: 3.2em;
+    font-size: 2em;
     display: flex;
     color: white;
     flex-direction: column;
     justify-content: center;
     font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+
+@media (min-width: 350px){
+
+}
+
+@media (min-width: 525px){
+
+}
+
+@media (min-width: 700px) {
+
+}   
+
+@media (min-width: 875px){
+ 
+}
+
+@media (min-width: 1050px) {
+    
+    .slogan-inside{ 
+        height: 710px;
+    }
+
+    .slogan-img{
+        content:'';
+        background-image: url('../img/giraffe.png');
+        color: white;
+        background-size:contain;
+        background-repeat:no-repeat;
+        
+        position: absolute;
+        height: 610px;
+        width: 540px;
+        right: 4%;
+        bottom: 5%;
+        opacity: .3;
+    }
+
+    .slogan-inside-text{
+        font-size: 3em;
+    }
+}   
+
+@media (min-width: 1225px) {
+
+}   
+
+@media (min-width: 1400px) {
+
+}   
+/*
+@media (min-width: 1575px) {
+
+}   
+
+@media (min-width: 1750px) {
+
+}   
+
+
+@media (min-width: 1925px) {
+
+}   
+
+@media (min-width: 2100px) {
+
+}   
+
+@media (min-width: 2275px) {
+   
+}   
+
+@media (min-width: 2450px) {
+   
 }
 
