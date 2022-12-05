@@ -1,8 +1,8 @@
 let parallaxBg = document.getElementById('parallax-bg')
-let giraffe = document.querySelector('.slogan-img')
+//let giraffe = document.querySelector('.slogan-img')
 
 //get initial giraffe y
-let giraffeHeight = giraffe.getBoundingClientRect().height
+//let giraffeHeight = giraffe.getBoundingClientRect().height
 
 
 window.addEventListener('scroll', ()=>{
@@ -14,10 +14,10 @@ window.addEventListener('scroll', ()=>{
     
     
     
-    let activeGiraffe = (giraffe.getBoundingClientRect().top - giraffe.getBoundingClientRect().height  )*-1
+    /*let activeGiraffe = (giraffe.getBoundingClientRect().top - giraffe.getBoundingClientRect().height  )*-1
     
     if ( activeGiraffe > 0 && activeGiraffe < giraffeHeight ){
         giraffe.style.right = activeGiraffe * 0.007 + '%';
-    }
+    }*/
     
 })
