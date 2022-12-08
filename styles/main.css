@@ -154,7 +154,7 @@ font-family: 'Poppins', sans-serif;
     padding-top: 32px;
     color: var(--col6);
     position: relative;
-    width: 100%;
+
     
 
 }
@@ -162,12 +162,29 @@ font-family: 'Poppins', sans-serif;
 .section-title::before{
     content: "";
     position: absolute;
+    
     left:-32px;
     margin-top: 26px;
     background-color: rgba(12, 65, 100, 0.101);
     height: 2px;
     width: 100px;
     
+}
+
+.section-title2{
+    display: inline-block;
+    background-image: linear-gradient(to left, var(--col6),transparent);
+    color: antiquewhite;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    
+    font-size: 40px;
+    font-style: italic;
+    padding: 6px;
+    padding-right: 50px;
+    padding-left: 100px;
+    border-radius: 0   50px 50px 0 ;
+    transform: rotate(-12deg) translateX(-50px);
+    align-self: center;
 }
 
 /* GENERAL media querys*/
@@ -649,7 +666,7 @@ font-family: 'Poppins', sans-serif;
 .destacados {
     position: relative;    
     padding-bottom: 60px;
-    padding-top: 80px;
+    padding-top: 60px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.938), rgba(255, 255, 255, 0.938)),
     url('../img/patterns/fondo-logo.jpg');
     
@@ -659,7 +676,6 @@ font-family: 'Poppins', sans-serif;
 
 .card-container{
     
-    padding-top: 42px;
     display: grid;
     justify-content: center;
     gap: 5px;
@@ -905,14 +921,16 @@ font-family: 'Poppins', sans-serif;
     flex-direction: column;
     justify-content: center;
     padding-left: 18px;
-    border-left: 4px solid wheat;
+    border-left: 4px solid white;
+
+    
 }
 
 .parallax-text-left p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: wheat;
-      
-    text-shadow: 0 0 3px black ;
+    color: white;
+    text-shadow: var(--col2) 1px 0 10px, 0 0 1em rgba(61, 238, 185, 0.61);
+    font-family: 'Secular One', sans-serif;
+    line-height: 0.9;
 }
 
 .parallax-text-right{
@@ -923,13 +941,14 @@ font-family: 'Poppins', sans-serif;
     flex-direction: column;
     justify-content: center;
     padding-left: 18px;
-    border-left: 4px solid wheat;
+    border-left: 4px solid white;
 }
 
-.parallax-text-right p{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-shadow: 0 0 3px black ;
+.parallax-text-right p{    
+    color:  wheat;
+    text-shadow: var(--col2) 1px 0 10px, 0 0 1em rgba(61, 238, 185, 0.61);
+    font-family: 'Secular One', sans-serif;
+    line-height: 0.9;
 }
 
 .parallax-footer{
@@ -977,10 +996,8 @@ font-family: 'Poppins', sans-serif;
     }
     
     .parallax-text-left p{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: white;
+        
         text-align: right;  
-        text-shadow: 0 0 3px black ;
     }
     
     .parallax-text-right{
@@ -991,13 +1008,11 @@ font-family: 'Poppins', sans-serif;
         flex-direction: column;
         justify-content: center;
         padding-left: 18px;
-        border-left: 4px solid wheat;
+        border-left: 4px solid white;
     }
     
     .parallax-text-right p{
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white;
-        text-shadow: 0 0 3px black ;
     }
     
 }   
@@ -1132,7 +1147,7 @@ font-family: 'Poppins', sans-serif;
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    box-shadow: 0 0 5px 3px var(--col6);
+    box-shadow: 0 -2px 5px 3px rgb(162, 183, 201); 
     position: relative;
     z-index: 21;
     
@@ -1141,12 +1156,12 @@ font-family: 'Poppins', sans-serif;
 .equipo-card-img::before{
     content: '';
     position: absolute;
-    top: -8%;
-    left: -10%;
-    border-radius: 50px 50px  0 0;
-    height: 146px;
-    width: 120%;
-    background-color:var(--col6);
+    top: 36%;
+    left: -7%;
+    height: 50px;
+    border-radius: 2px;
+    width: 114%;
+    background-color: rgb(162, 183, 201); 
     z-index: 20;
 }
 
