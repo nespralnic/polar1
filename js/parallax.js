@@ -9,7 +9,6 @@ window.addEventListener('scroll', ()=>{
     let topCorrection = parallaxBg.getBoundingClientRect().top
 
         parallaxBg.style.top = topCorrection * -0.3 + 'px';
-        console.log( topCorrection);
     
     
     

@@ -174,7 +174,7 @@ function displayStartF(){
                 let footer = document.querySelector(".card-container-footer")
                 footer.classList.add("change")
             }
-        },index*200)
+        },index*100)
         
     }
 }
@@ -187,7 +187,7 @@ function displayAll(){
             contenido.innerHTML = deliverPic(arrayPic)
             cardContainer.appendChild(contenido);
         
-        },index*200)
+        },index*100)
         
     }
 }
