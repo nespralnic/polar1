@@ -1499,7 +1499,7 @@ font-family: 'Poppins', sans-serif;
     background-color: rgba(12, 65, 100, 0.101);
     z-index: 1;
     clip-path: ellipse(95% 46% at 66% 98%);
-    -webkit-clip-path: ellipse(95% 100% at 66% 98%);
+    -webkit-clip-path: ellipse(95% 80% at 66% 98%);
 }
 
 .contacto-form{
@@ -1511,7 +1511,7 @@ font-family: 'Poppins', sans-serif;
 
 .form-entry{
     /*--col6: #5b847c*/
-    border: 2px solid #5b847cb4;
+    border: 1px solid #5b847cb4;
     width: 265px;
     height: 46px;
     margin: 10px;
@@ -1536,7 +1536,7 @@ font-family: 'Poppins', sans-serif;
     
     font-size: 1.3em;
     font-family: 'Encode Sans Condensed', sans-serif;
-    border: 2px solid #5b847cb4;
+    border: 1px solid #5b847cb4;
     width: 265px;
     height: 46px;
     margin: 10px;
