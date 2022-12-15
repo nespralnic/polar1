@@ -167,7 +167,7 @@ font-family: 'Poppins', sans-serif;
     background-color: rgba(12, 65, 100, 0.788);
     height: 5px;
     width: 0%; 
-    transition: all ease-in .5s;
+    transition: all ease-in .3s;
 }
 
 .section-title-underline.active{
@@ -1166,45 +1166,54 @@ font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 100px;
+    width: 100%;
 
     
 }
 
 .equipo-card{
     width: 285px;
-    height: 460px;
+    height: 535px;
     
 }
 
 .equipo-card-img{
     margin: 0 auto;
-    border-radius: 50%;
-    height: 200px;
+    border-radius: 7%;
+    height: 275px;
     width: 200px;
-    box-shadow: 0 -2px 5px 3px rgb(162, 183, 201); 
+    box-shadow: 0 0 5px 2px rgb(162, 183, 201); 
     position: relative;
-    z-index: 21;
+    
     
 }
 
-.equipo-card-img::before{
+.equipo-card-imgs::before{
     content: '';
     position: absolute;
-    top: 36%;
+    top: -4px;
     left: -7%;
-    height: 50px;
-    border-radius: 2px;
-    width: 114%;
+    height: 130%;
+    border-radius: 7px;
+    
+    box-shadow: 0 0 5px 2px rgb(162, 183, 201); 
+    width: 100%;
     background-color: rgb(162, 183, 201); 
-    z-index: 20;
+    
 }
 
 
 .equipo-card-img img{
     object-fit:cover;
     object-position: 0 0;   
+}
+
+.equipo-card-img img:hover{
+    opacity: .9;
+    cursor: pointer;
+    
 }
 
 .equipo-card-nombre{
@@ -1214,6 +1223,7 @@ font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: auto;
     margin-top: 8px;
+    z-index: 22;
 }
 
 .equipo-card-descripcion{
@@ -1262,15 +1272,20 @@ font-family: 'Poppins', sans-serif;
 @media (min-width: 875px){
     
 .equipo-container{
+    width: 95%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
+    justify-content: space-between;
+    
 }
 }
 
 @media (min-width: 1050px) {
-
+    
+.equipo-container{
+    width: 85%;
+    
+}
 }   
 
 @media (min-width: 1225px) {
@@ -1279,7 +1294,24 @@ font-family: 'Poppins', sans-serif;
 
 @media (min-width: 1400px) {
     .equipo-container{
-        width: 85%;
+        width: 80%;
+    }
+
+    .equipo-card{
+        width: 340px;
+        height: 640px;
+        
+    }
+    
+    .equipo-card-img{
+        margin: 0 auto;
+        border-radius: 7%;
+        height: 330px;
+        width: 240px;
+        box-shadow: 0 0 5px 2px rgb(162, 183, 201); 
+        position: relative;
+        
+        
     }
 }   
 /*
@@ -1317,18 +1349,9 @@ font-family: 'Poppins', sans-serif;
     background-color: var(--col6);
     position: relative;
     box-sizing: border-box;
+    
 }
 
-
-.slogan-inside{ 
-    height: 600px;
-    border-radius: 12px; 
-    opacity: 0.8;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-
-}
 
 .slogan::before{
     content:'';
@@ -1344,45 +1367,58 @@ font-family: 'Poppins', sans-serif;
     -webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
 }
 
-.slogan-mic-img{
-    
-    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.815)),
-    url('../img/mic-slogan.jpg');
-    
+/* ---------------------------------- R1 --- */
+
+.slogan-r1{
+    display: flex;
+    height:375px;
+    width: 100%;
+}
+
+.slogan-r1-img-left{
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.623)),
+    url('../img/gallery/gente-trabajando1.jpg');
+    width: 50%;
+    background-size: cover;
+    background-position: left;
+}
+
+.slogan-r1-img-right{
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.63)),
+    url('../img/gallery/gente-trabajando3.jpg');
+    width: 50%;
+    background-size: cover;
     background-position: center;
-    width: 40%;
-    height: 100%;
-    z-index: 0;
+}
+/* ---------------------------------- R2 --- */
+.slogan-r2{ 
+    height: 600px;
+    border-radius: 12px; 
+    opacity: 0.8;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.slogan-img{
-    content:'';
-    background-image: url('../img/giraffe.png');
-    color: white;
-    background-size:contain;
-    background-repeat:no-repeat;
-    
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    bottom: 24%;
-    right: 5%;
-    opacity: .05;
-}
+/* ---------------------------------- r2 LEFT --- */
 
-
-
-
-.slogan-inside-text-wrap{
-    height: 100%;
+.slogan-r2-left{
     width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slogan-r2-text-wrap{
+    height: 66%;
     position: relative;
 }
 
-.slogan-inside-text{
+.slogan-r2-inside-text{
     position: absolute;
     left: 15%;
-    top: 30%;
+    top: 20%;
     width: 150%;
     font-size: 1.8em;   
     line-height: 1.5;
@@ -1393,6 +1429,61 @@ font-family: 'Poppins', sans-serif;
     justify-content: center;
     font-family: 'Encode Sans Condensed', sans-serif;
 }
+
+.slogan-r2-left-img{
+    height: 34%;
+    
+    background-image: linear-gradient(to top, transparent, rgba(128, 126, 126, 0.329)),
+    url('../img/gallery/gente-trabajando2.jpg');
+    background-size: cover;
+    background-position:top;
+}
+
+/* ---------------------------------- r2 RIGHT --- */
+
+.slogan-r2-right{
+    width: 40%;
+}
+
+
+.slogan-mic-img{
+    
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.815)),
+    url('../img/mic-slogan.jpg');
+    
+    background-position: center;
+    
+    height: 100%;
+    z-index: 0;
+}
+
+/* --------------- R3 ---*/
+
+
+.slogan-r3{
+    display: flex;
+    height:375px;
+    width: 100%;
+}
+
+.slogan-r3-img-left{
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.623)),
+    url('../img/gallery/gente-trabajando4.jpg');
+    width: 42%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slogan-r3-img-right{
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.63)),
+    url('../img/gallery/ana.jpg');
+    width: 58%;
+    background-size: cover;
+    background-position: top;
+}
+
+
+
 
 
 
@@ -1410,32 +1501,39 @@ font-family: 'Poppins', sans-serif;
 }   
 
 @media (min-width: 875px){
- 
+    .slogan-r2-left-img{
+        height: 34%;
+        width:70%;
+        background-image: linear-gradient(to top, transparent, rgba(128, 126, 126, 0.329)),
+        url('../img/gallery/gente-trabajando2.jpg');
+        background-size: cover;
+        background-position:top;
+        position: relative;
+    }
+
+    .slogan-r2-left-img::after{
+        content: '';
+        position: absolute;
+        left: 100%;
+        height: 100%;
+        width: 42.8%;
+        background-image:url('../img/logo.png');
+        filter: grayscale(100%);
+        background-size: contain;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-color: rgb(29, 29, 29);
+    }
 }
 
 @media (min-width: 1050px) {
-    
-    .slogan-inside{ 
-        height: 710px;
-    }
 
-    .slogan-img{
-        content:'';
-        background-image: url('../img/giraffe.png');
-        color: white;
-        background-size:contain;
-        background-repeat:no-repeat;
-        
-        position: absolute;
-        height: 610px;
-        width: 540px;
-        right: 4%;
-        bottom: 5%;
-        opacity: .05;
-    }
 
-    .slogan-inside-text{
-        font-size: 3em;
+    .slogan-r2-inside-text{
+        left: 8%;
+        top: 12%;
+        width: 150%;
+        font-size: 2.8em;
         line-height: 1.2;
     }
 }   
@@ -1445,7 +1543,14 @@ font-family: 'Poppins', sans-serif;
 }   
 
 @media (min-width: 1400px) {
-
+    
+    .slogan-r2-inside-text{
+        left: 11%;
+        top: 11%;
+        width: 150%;
+        font-size: 3.1em;
+        line-height: 1.2;
+    }
 }   
 /*
 @media (min-width: 1575px) {
