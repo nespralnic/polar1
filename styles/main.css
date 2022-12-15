@@ -326,7 +326,7 @@ font-family: 'Poppins', sans-serif;
     /*-webkit-text-fill-color:transparent;  
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color:var(--col6);*/
-    text-shadow: var(--col2) 1px 0 10px, 0 0 1em rgba(61, 238, 185, 0.61);
+    text-shadow: var(--col2) 1px 0 4px, 0 0 5px rgba(61, 238, 185, 0.61);
     
     font-size: 2.6em;
     font-family: 'Secular One', sans-serif;
@@ -503,6 +503,7 @@ font-family: 'Poppins', sans-serif;
 
 .carrousel-arrow a{
     opacity: .5;
+    z-index: 20;
 }
 
 .carrousel-arrow a:hover{
@@ -529,7 +530,7 @@ font-family: 'Poppins', sans-serif;
 @media (min-width: 350px){
     .carrousel-title{
         position: absolute;
-        bottom: 15%;
+        bottom: 22%;
         left: 6%;
         z-index: 1202;
         width: 100%;
@@ -539,28 +540,21 @@ font-family: 'Poppins', sans-serif;
     .carrousel-title-text p{
         position: relative;
         line-height: 90%;
-        
-        font-size: 2.6em;
+        font-size: 2.9em;
         font-family: 'Secular One', sans-serif;
         
     }
 }
 
 @media (min-width: 525px){
-    .carrousel-title::before{
-        width: 13%; /*proporcionales*/
-        height: 6em;/*proporcionales*/
-    }
+    
     .carrousel-title-text p{
-        font-size: 3.5em;        
+        font-size: 3.8em;        
     }
 }
 
 @media (min-width: 700px) {
-    .carrousel-title::before{
-        width: 13%; /*proporcionales*/
-        height: 7.6em;/*proporcionales*/
-    }
+    
     .carrousel-title-text p{
         font-size: 4.4em;        
     }
@@ -967,7 +961,7 @@ font-family: 'Poppins', sans-serif;
 
 .parallax-text-left p{
     color: white;
-    text-shadow: var(--col2) 1px 0 10px, 0 0 1em rgba(61, 238, 185, 0.61);
+    text-shadow: var(--col2) 1px 0 5px, 0 0 5px rgba(61, 238, 185, 0.61);
     font-family: 'Secular One', sans-serif;
     line-height: 0.9;
 }
@@ -985,7 +979,7 @@ font-family: 'Poppins', sans-serif;
 
 .parallax-text-right p{    
     color:  wheat;
-    text-shadow: var(--col2) 1px 0 10px, 0 0 1em rgba(61, 238, 185, 0.61);
+    text-shadow: var(--col2) 1px 0 5px, 0 0 5px rgba(61, 238, 185, 0.61);
     font-family: 'Secular One', sans-serif;
     line-height: 0.9;
 }
