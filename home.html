@@ -185,17 +185,24 @@
             </div>
         </div>
         
-        <div class="contacto">
+        <div class="contacto" >
             <div class="section-title ">
                 CONTACTO
                 <div class="section-title-underline"></div>            
             </div>
+            <div class="form-success" id="contacto">
+                <span>Tu mensaje fue enviado.</span>
+            </div>
             <div class="contacto-container">
-                <form action="" class="contacto-form">
-                    <input type="text" class="name form-entry" placeholder="Nombre" />
-                    <input type="text" class="mail form-entry" placeholder="eMail" />
-                    <textarea class="form-entry message" placeholder="Mensaje"></textarea>
+                <form action="https://formsubmit.co/bb42830c366eab023f0e8e6b03619f26" method="POST" class="contacto-form">
+                    <input type="text" class="name form-entry" placeholder="Nombre" name="Nombre" required>
+                    <input type="text" class="mail form-entry" placeholder="eMail" name="Email" required>
+                    <textarea class="form-entry message" placeholder="Mensaje" name="Mensaje" required></textarea>
                     <button class="form-btn" type="submit" value="">ENVIAR</button>
+                    
+                    <input type="hidden" name="_subject" value="Mensaje de diagramapolar.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/home.html?scss=1#contacto">
                 </form>
             </div>
         </div>
@@ -204,5 +211,6 @@
     <script src="js/leftMenu.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/io.js"></script>
+    <script src="js/form-success.js"></script>
 </body>
 </html>

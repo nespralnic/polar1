@@ -5,13 +5,10 @@ target.forEach((tgt)=> {
     observer.observe(tgt);
 })
 
-console.log(target);
-
 function handleIntersect(entries){
     entries.forEach((entry) => {
         if (entry.isIntersecting){
             entry.target.classList.add("active");
-            console.log("hey");
         }})
 }
 

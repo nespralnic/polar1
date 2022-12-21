@@ -491,6 +491,7 @@ font-family: 'Poppins', sans-serif;
     justify-content: center;
 }
 
+
 .carrousel-arrow img{
     
     height: 40px;
@@ -1657,6 +1658,30 @@ font-family: 'Poppins', sans-serif;
 
 }
 
+.form-success{
+    margin: 10px auto;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 20x;
+    color: white;
+    font-style: italic;
+    width: 265px;
+    height: 46px;
+    background-color: var(--col6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    animation: shine 2s;
+}
+
+@keyframes shine {
+    20%{ background-color: var(--col8);}
+}
+
+
+.form-success.active{
+    display: unset;
+}
+
 @media (min-width: 350px){
 
 }
@@ -1668,6 +1693,7 @@ font-family: 'Poppins', sans-serif;
 @media (min-width: 700px) {
     .form-entry{width: 365px;}
     .form-btn{width: 365px;}
+    .form-success{width: 365px;}
 }   
 
 @media (min-width: 875px){
@@ -1688,6 +1714,10 @@ font-family: 'Poppins', sans-serif;
         width: 516px;
         height: 58px;
     }
+    .form-success{    
+        width: 516px;
+        height: 68px;
+        font-size: 24px;}
 
 }   
 
