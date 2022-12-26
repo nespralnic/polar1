@@ -194,11 +194,13 @@
                 <span>Tu mensaje fue enviado.</span>
             </div>
             <div class="contacto-container">
+                <!-- bb42830c366eab023f0e8e6b03619f26 -->
                 <form action="https://formsubmit.co/niconespral@gmail.com" method="POST" class="contacto-form">
-                    <input type="text" class="name form-entry" placeholder="Nombre" name="Nombre" required>
-                    <input type="text" class="mail form-entry" placeholder="eMail" name="Email" required>
+                    <input type="text" class="name form-entry" placeholder="Nombre" id="name" name="Nombre" required>
+                    <input type="text" class="mail form-entry" placeholder="eMail" id="email" name="Email" required> 
+                    <div class="form-entry-repeat"><input type="text" class="mail form-entry" placeholder="Repeat eMail" id="repeatEmail" name="repetirEmail" required> <span class="email-confirm"><img src="./img/icon-ok.png" alt=""></span></div>
                     <textarea class="form-entry message" placeholder="Mensaje" name="Mensaje" required></textarea>
-                    <button class="form-btn" type="submit" value="">ENVIAR</button>
+                    <button class="form-btn disabled" type="submit" disabled >ENVIAR</button>
                     
                     <input type="hidden" name="_subject" value="Mensaje de diagramapolar.com">
                     <input type="hidden" name="_captcha" value="false">
@@ -206,11 +208,14 @@
                 </form>
             </div>
         </div>
+        <div class="footer">
+            
+        </div>
     </main>
     <script src="js/galleryV2.js"></script>
     <script src="js/leftMenu.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/io.js"></script>
-    <script src="js/form-success.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
