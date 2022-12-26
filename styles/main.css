@@ -268,147 +268,71 @@ font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
 
+
+
+/* --- V2 ---- */
+/* <div class="carrousel-container">
+            <div class="carrousel-title">
+                <div class="title-text-main">
+                <div class="title-text-sub">
+*/
+
 .carrousel-title{
     position: absolute;
-    bottom: 15%;
-    left: 6%;
+    bottom: 32%;
+    left: 4%;
     z-index: 1202;
     width: 100%;
     height: 6em;
     line-height: 90%;
+    display: flex;
+    flex-direction: column;
+    animation: appearText 10s forwards;
+
 }
 
-/*
-.carrousel-title::before{
-    content: '';
-    position: absolute;
-    left: -15%;
-    line-height: 90%;
-    width: 13%;
-    height: 4.7em;
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    z-index: 12;
-    animation: pop-left 19.5s infinite;
+.title-text-main{
     
-}*/
-
-@keyframes pop-left {
-    0%{width: 13%;}
-    2%{width: 100%;}
-    4%{width: 13%;}
-    31%{width: 13%;}
-    33%{width: 100%;}
-    35%{width: 13%;}
-    65%{width: 13%;}
-    67%{width: 100%;}
-    68%{width:13%;}
-
-}
-
-.carrousel-title-text{
-    position: absolute;
-    animation: appear 1s;
-    animation-delay: 0.2;
-}
-
-
-@keyframes appear {
-    from{opacity: 0;}
-    to{opacity: .8;}
-}
-
-.carrousel-title-text p{
-    position: relative;
-    line-height: 90%;
-    
+    font-size: 3.6em;
+    font-weight: 600;
     color: white;
-    /*-webkit-text-fill-color:transparent;  
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:var(--col6);*/
-    text-shadow: var(--col2) 1px 0 4px, 0 0 5px rgba(61, 238, 185, 0.61);
-    
-    font-size: 2.6em;
+    text-shadow: var(--col2) 1px 0 5px, 0 0 5px rgba(61, 238, 185, 0.61);
     font-family: 'Secular One', sans-serif;
-}
-
-
-
-.text1{
-    animation: appearText1 19.5s infinite;
-
-}
-.text2{
-    animation: appearText2 19.5s infinite;
-}
-.text3{
-    animation: appearText3 19.5s infinite;
-}
-
-@keyframes appearText11 {
-0%{opacity: 1;
-    font-size: 4em;
-}
-5%{opacity: 1;
-    font-size: 4em;}
-33%{opacity: 0;
-    font-size: 3em;
-}
-100%{opacity: 0;}
-}
-
-@keyframes appearText1 {
-    0%{ 
-        opacity: 0;}
-    1%{opacity: 0;
-        transform:scale(1.4) translateX(50px);}
-    2%{ 
-        opacity: 1;
-        transform:scale(1.3) translateX(30px);}
-    32%{opacity: 1;
-        transform: scale(1.34) translateX(20px);}
-    33%{opacity: 0;
-        transform: scale(1.6);}
-    63%{opacity: 0;}
-    66%{opacity: 0;}
-    97%{opacity: 0;}
-    100%{opacity: 0;}
-}
-
-@keyframes appearText2 {
-    0%{opacity: 0;}
-    33%{opacity: 0;
-        transform:scale(0.98) translateY(-40px);
-    }
-    34%{opacity: 1;
-        transform: translateX(0) translateY(-20px);}
-    65%{opacity: 1;
-        }
-    66%{opacity: 0;
-        ;}
-    70%{}
-    97%{opacity: 0;
-        ;}
     
-    100%{opacity: 0;
-        transform:scale(1.12) translateX(6px) translateY(2px)}
-}
-
-@keyframes appearText3 {
-    0%{opacity: 0;}
-    30%{opacity: 0;}
-    33%{opacity: 0;}
-    63%{opacity: 0;}
-    66%{opacity: 0;
-        transform:scale(1.2) translateX(-60px)}
-    67%{opacity: 1;
-        transform:scale(1) translateX(-8px);}
-    99%{opacity: 1;
-        transform:  translateX(0px);}
-    100%{opacity: 0;
-        transform: scale(1.02);}
+    
+    line-height: 0.9;
 
 }
+.title-text-sub{
+    
+    font-size: 1.7em;
+    color: white;
+    
+    font-weight: 600;
+    text-shadow: var(--col2) 1px 0 5px, 0 0 5px rgba(0, 0, 0, 0.815);
+    
+    font-family: 'Encode Sans Condensed', sans-serif;
+    line-height: 1.1;
+}
+
+@keyframes appearText {
+    0%{opacity: 0;
+        transform:scale(0.94) translateY(-10px);}
+    6%{opacity: 1;
+        
+    }
+
+    
+    100%{
+        transform:translateX(4px) translateY(2px)}
+}
+
+
+
+
+
+
+
 
 .carrousel-image{
     position: absolute;
@@ -529,35 +453,44 @@ font-family: 'Poppins', sans-serif;
 
 
 @media (min-width: 350px){
-    .carrousel-title{
-        position: absolute;
-        bottom: 22%;
-        left: 6%;
-        z-index: 1202;
-        width: 100%;
-        
-    }
 
-    .carrousel-title-text p{
-        position: relative;
-        line-height: 90%;
-        font-size: 2.9em;
-        font-family: 'Secular One', sans-serif;
-        
-    }
 }
 
 @media (min-width: 525px){
+
+    .carrousel-title{
+        bottom: 32%;
+        left: 4%;
+    }
     
-    .carrousel-title-text p{
-        font-size: 3.8em;        
+    .title-text-main{
+    
+        font-size: 4.1em;
+    
+    }
+    .title-text-sub{
+        
+        font-size: 1.9em;
+
     }
 }
 
 @media (min-width: 700px) {
     
-    .carrousel-title-text p{
-        font-size: 4.4em;        
+    .carrousel-title{
+        bottom: 36%;
+        left: 4%;
+    }
+    
+    .title-text-main{
+    
+        font-size: 4.4em;
+    
+    }
+    .title-text-sub{
+        
+        font-size: 2.1em;
+
     }
     
     .carrousel-arrow img{
@@ -570,67 +503,97 @@ font-family: 'Poppins', sans-serif;
 
 @media (min-width: 875px){
 
+
     .carrousel-title{
-        bottom: 27%;
+        bottom: 40%;
+        left: 4%;
     }
-    .carrousel-title::before{
-        width: 13%; /*proporcionales*/
-        height: 9.6em;/*proporcionales*/
-    }
-    .carrousel-title-text p{
-        font-size: 5.5em;    
     
-    -webkit-text-stroke-width: 4px;
+    .title-text-main{
+    
+        font-size: 4.8em;
+    
+    }
+    .title-text-sub{
         
-    } 
+        font-size: 2.3em;
+
+    }
 }
 
 @media (min-width: 1050px) {
     
     .carrousel-title{
-        bottom: 30%;
+        bottom: 40%;
+        left: 4%;
     }
-    .carrousel-title::before{
-        width: 13%; /*proporcionales*/
-        height: 11em;/*proporcionales*/
+    
+    .title-text-main{
+    
+        font-size: 4.8em;
+    
     }
-    .carrousel-title-text p{
-        font-size: 6.6em;        
-    } 
+    .title-text-sub{
+        
+        font-size: 2.3em;
+
+    }
 }   
 
 @media (min-width: 1225px) {
     .carrousel-title{
-        bottom: 36%;
+        bottom: 41%;
+        left: 6%;
     }
-    .carrousel-title::before{
-        width: 13%; /*proporcionales*/
-        height: 13.4em;/*proporcionales*/
+    .title-text-main{
+    
+        font-size: 5.8em;
+    
     }
-    .carrousel-title-text p{
-        font-size: 7.7em;        
-    } 
+    .title-text-sub{
+        
+        font-size: 2.7em;
+        font-weight: 500;
+    }
 }   
 
 @media (min-width: 1400px) {
     .carrousel-title{
-        bottom: 36%;
+        bottom: 42%;
     }
-    .carrousel-title::before{
-        width: 13%; /*proporcionales*/
-        height: 15em;/*proporcionales*/
+    .title-text-main{
+    
+        font-size: 6.6em;
+    
     }
-    .carrousel-title-text p{
-        font-size: 8.8em;        
+    .title-text-sub{
+        
+        font-size: 3.1em;
+        font-weight: 500;
+
     } 
 }   
-/*
+
 @media (min-width: 1575px) {
 
 }   
 
-@media (min-width: 1750px) {
 
+
+@media (min-width: 1750px) {
+    .carrousel-title{
+        bottom: 43%;
+    }
+    .title-text-main{
+    
+        font-size: 7.3em;
+    
+    }
+    .title-text-sub{
+        
+        font-size: 3.5em;
+
+    } 
 }   
 
 
