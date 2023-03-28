@@ -30,17 +30,17 @@
                 </div>
                 <div class="title-text-sub">
                     <div >
-                        <p>SONIDO DIRECTO</p>
+                        <p id="mainTitle1">SONIDO DIRECTO</p>
                     </div>
                     <div >
-                        <p>EDICIÓN Y MEZCLA</p>
+                        <p id="mainTitle2">EDICIÓN Y MEZCLA</p>
                     </div>
                 </div>
                 
                 <div class="language">
                     <div class="language-box">
-                        <div class="box1">ENG</div>
-                        <div class="box2">CAT</div>
+                        <div class="box" onclick="translating(eng)">ENG</div>
+                    <div class="box" onclick="translating(cat)">CAT</div>
                     </div>
                 </div>
             </div>
@@ -60,13 +60,7 @@
             
         </div>
         
-        
-        
-        
-        
-
-       
-        
+    
             <div class="left-menu">
                 <div class="left-menu-container">
                     <div class="left-menu-text"></div>
@@ -79,7 +73,7 @@
         
         
         <section class="destacados">  
-            <div class="section-title" id="l">
+            <div class="section-title" id="sectionTitleDestacados">
                 TRABAJOS            
                 <div class="section-title-underline"></div> 
             </div>
@@ -89,7 +83,7 @@
                 </div>
                 
                 <div class="card-container-masinfo">
-                    <div class="card-container-masinfo-text">Más trabajos!</div>
+                    <div class="card-container-masinfo-text" id="sectionTitleDestacadosFooter">Más trabajos!</div>
                 </div>
             </section>
             </div>
@@ -118,7 +112,7 @@
         
         
         <div class="equipo">
-            <div class="section-title ">
+            <div class="section-title " id="sectionTitleEquipo">
                 EQUIPO
                 <div class="section-title-underline"></div>            
             </div>    
@@ -130,7 +124,7 @@
                     <div class="equipo-card-nombre"> Pablo Gregorio</div>
                     <div class="equipo-card-descripcion">Almirante del cinturón estelar</div>
                     <div class="equipo-card-masinfo">
-                        <div class="equipo-card-masinfo-tag">más info</div>
+                        <div class="equipo-card-masinfo-tag" id="equipoMasInfo1">más info</div>
                     </div>
                 </div>
                 <div class="equipo-card">
@@ -140,7 +134,7 @@
                     <div class="equipo-card-nombre">Gabriel Hurtado</div>
                     <div class="equipo-card-descripcion">Coronel de la galaxia próxima</div>
                     <div class="equipo-card-masinfo">
-                        <div class="equipo-card-masinfo-tag">más info</div>
+                        <div class="equipo-card-masinfo-tag" id="equipoMasInfo2">más info</div>
                     </div>
                 </div>
                 <div class="equipo-card">
@@ -150,7 +144,7 @@
                     <div class="equipo-card-nombre">Pablo Yrazu</div>
                     <div class="equipo-card-descripcion">Teniente para el rayo cósmico</div>
                     <div class="equipo-card-masinfo">
-                        <div class="equipo-card-masinfo-tag">más info</div>
+                        <div class="equipo-card-masinfo-tag" id="equipoMasInfo3">más info</div>
                     </div>
                 </div>
             </div>
@@ -192,12 +186,12 @@
         </div>
         
         <div class="contacto" >
-            <div class="section-title ">
+            <div class="section-title " id="sectionTitleContacto">
                 CONTACTO
                 <div class="section-title-underline"></div>            
             </div>
             <div class="form-success" id="contacto">
-                <span>Tu mensaje fue enviado.</span>
+                <span id="">Tu mensaje fue enviado.</span>
             </div>
             <div class="contacto-container">
                 <!-- bb42830c366eab023f0e8e6b03619f26 -->
@@ -206,7 +200,7 @@
                     <input type="text" class="mail form-entry" placeholder="eMail" id="email" name="Email" required> 
                     <div class="form-entry-repeat"><input type="text" class="mail form-entry" placeholder="Repeat eMail" id="repeatEmail" name="repetirEmail" required> <span class="email-confirm"><img src="./img/icon-ok.png" alt=""></span></div>
                     <textarea class="form-entry message" placeholder="Mensaje" name="Mensaje" required></textarea>
-                    <button class="form-btn disabled" type="submit" disabled >ENVIAR</button>
+                    <button class="form-btn disabled" type="submit" disabled id="contactoEnviar">ENVIAR</button>
                     
                     <input type="hidden" name="_subject" value="Mensaje de diagramapolar.com">
                     <input type="hidden" name="_captcha" value="false">
@@ -223,6 +217,7 @@
             </div>
         </div>
     </main>
+    <script src="js/translator.js"></script>
     <script src="js/galleryV2.js"></script>
     <script src="js/leftMenu.js"></script>
     <script src="js/parallax.js"></script>

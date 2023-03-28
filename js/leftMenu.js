@@ -25,10 +25,13 @@ let leftMenutext = document.querySelector(".left-menu-text")
 
 // secciones participantes
 // ("html tag","message","top start","bottom end")
+// translator adjustements
 let sections = [
-    new Section("destacados","MÁS TRABAJOS!",0,200),
+    new Section("destacados",{ 'esp' : "MÁS TRABAJOS!", 'eng' : 'MORE PRODUCTIONS!', 'cat' : 'MÉS TREBALLS'
+},0,200),
     //new Section("slogan","hola",-100,0),
-    new Section("equipo","Click para BIOs",-100,200)
+    new Section("equipo", { 'esp' : "Click para BIOs", 'eng' : 'Link to BIOs', 'cat' : 'Link a la BIO'
+},-100,200)
 ]
 
 
@@ -57,9 +60,10 @@ window.addEventListener("scroll",()=>{
         toggleActive(e)        
         if (e.active && !justOnceArray.includes(e.name)){
             e.once = true
-            leftMenutext.innerHTML = e.msg 
+            leftMenutext.innerHTML = e.msg[currentLanguage] 
             
             leftMenu.classList.add("left-menu-appear")
+            
         } else if (!Section.active) {
             leftMenu.classList.remove("left-menu-appear")
             if (e.once && !justOnceArray.includes(e.name)){
