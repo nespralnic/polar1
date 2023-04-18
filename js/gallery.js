@@ -91,22 +91,23 @@ let picsBase = [
     "categories": []
     },
     {
-    "id": 16,
+    "id": 19,
     "url": "./img/pelis/red dress.jpg",
     "categories": []
     },
     {
-    "id": 1,
+    "id": 20,
     "url": "./img/pelis/todoparecia.jpg",
     "categories": []
     },
 ]
 
 //open window on top
+/*
 window.onbeforeunload = () => {
     window.scrollTo(0,0)
 }
-
+*/
 
 //DISPLAY DE CARDS
 

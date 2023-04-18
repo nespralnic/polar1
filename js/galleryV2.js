@@ -102,11 +102,13 @@ let picsBase = [
     },
 ]
 
+
 //open window on top
+/*
 window.onbeforeunload = () => {
     window.scrollTo(0,0)
 }
-
+*/
 
 //DISPLAY DE CARDS
 
@@ -179,22 +181,39 @@ function displayStartF(){
     }
 }
 
-function displayAll(){
-    for (let index = 0; index < arrayPic.length; index++) {
+function displayMovieCards(amount){
+    
+    //check amount
+    let picsLeft = totalPic - counterPic
+    let button = document.querySelector(".card-container-masinfo")
+    if (amount > picsLeft) {
+        amount = picsLeft
+        button.style.display = "none"
+    } 
+
+    for (let index = 0; index < amount; index++) {
+        
         setTimeout(()=>{
+            
             let contenido = document.createElement("div")
             contenido.classList.add("card","new-card")
             contenido.innerHTML = deliverPic(arrayPic)
             cardContainer.appendChild(contenido);
-        
+            
+            console.log(counterPic)
+            
         },index*100)
-        
+            
     }
 }
 
+
+
+
+
 //MAIN
 //print 2 complete rows of initial cards depending on viewport size
-displayAll()
+displayMovieCards(8)
 
 
 
