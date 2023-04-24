@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
   }
 
+a {
+    text-decoration: none;
+}  
+
 body{
 }
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Anton&family=Denk+One&family=Encode+Sans+Condensed:wght@100&family=Imprima&family=Poppins:wght@100&family=Roboto:wght@300&family=Secular+One&display=swap');
