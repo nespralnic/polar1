@@ -21,8 +21,8 @@ let esp = {
 
 let eng = {
     _language : 'eng',
-    mainTitle1: "Direct sound",
-    mainTitle2: "Edit and mix",
+    mainTitle1: "DIRECT SOUND",
+    mainTitle2: "EDIT & MIX",
     sectionTitleDestacados: 'PRODUCTIONS<div class="section-title-underline active"></div>',
     sectionTitleDestacadosFooter: "More productions!",
     sectionTitleEquipo: 'STAFF<div class="section-title-underline active"></div>',
@@ -112,9 +112,9 @@ window.onload = () => {
 // language buttons
 function languageButtonsUpdate(lan){
     let languageBox = document.querySelector('.language-box')
-    let divEng = '<div class="box" onclick="translating(eng)">ENG</div>'
-    let divEsp = '<div class="box" onclick="translating(esp)">ESP</div>'
-    let divCat = '<div class="box" onclick="translating(cat)">CAT</div>'
+    let divEng = '<div class="box" onclick="translating(eng)"><img src="./img/flag/bandera-eng.PNG" title="English"></div>'
+    let divEsp = '<div class="box" onclick="translating(esp)"><img src="./img/flag/bandera-esp.PNG" title="Español"></div>'
+    let divCat = '<div class="box" onclick="translating(cat)"><img src="./img/flag/bandera-cat.PNG" title="Catalá"></div>'
 
     switch (lan) {
         case 'esp':

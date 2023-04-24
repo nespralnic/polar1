@@ -342,7 +342,7 @@ font-family: 'Poppins', sans-serif;
     line-height: 90%;
     display: flex;
     flex-direction: column;
-    animation: appearText 10s forwards;
+    /*animation: appearText 10s forwards;*/
 
 }
 
@@ -398,18 +398,27 @@ font-family: 'Poppins', sans-serif;
 
 .language-box{
     display: flex;
-    gap: 5px;
+    
+    column-gap: 5px;
 }
 
 .language-box div{
 
     border: 2px solid rgba(255, 255, 255, 0.418);
-    padding: 5px;
+    height: 23px;
+    
 }
 
-.language-box div:hover{
+.language-box div img{
+    width: 34px;
+    height: 23px;
+    opacity: .7;
+}
+
+.language-box div img:hover{
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.11);
+    opacity: 1;
+    
 }
 
 
@@ -554,20 +563,20 @@ font-family: 'Poppins', sans-serif;
 @media (min-width: 525px){
 
     
-
+/*
     .carrousel-title{
         bottom: 32%;
         left: 4%;
-    }
+    }*/
     
     .title-text-main{
     
-        font-size: 4.1em;
+        font-size: 3.3em;
     
     }
     .title-text-sub{
         
-        font-size: 1.9em;
+        font-size: 1.4em;
 
     }
 }
