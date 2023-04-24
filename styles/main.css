@@ -370,7 +370,7 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Encode Sans Condensed', sans-serif;
     line-height: 1.1;
     padding-top: 2%;
-    transform: scaleX(1.25) translateX(10.2%);
+    /*transform: scaleX(1.25) translateX(10.2%);*/
     }
 
 @keyframes appearText {
@@ -404,7 +404,6 @@ font-family: 'Poppins', sans-serif;
 
 .language-box div{
 
-    border: 2px solid rgba(255, 255, 255, 0.418);
     height: 23px;
     
 }
@@ -1481,7 +1480,7 @@ font-family: 'Poppins', sans-serif;
 
 .slogan-inside-text{
     padding: 3% 0;
-    font-size: .8em;   
+    font-size: 1em;   
     line-height: 1.5;
     color: var(--col6);
     display: flex;
