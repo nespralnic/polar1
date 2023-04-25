@@ -1435,18 +1435,18 @@ font-family: 'Poppins', sans-serif;
 
 .slogan-r1-img-left{
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.623)),
-    url('../img/gallery/gente-trabajando1.jpg');
-    width: 50%;
-    background-size: cover;
-    background-position: left;
+    url('../img/gallery/gt0.PNG');
+    width: 60%;
+    background-size:cover;
+    background-position: top right;
 }
 
 .slogan-r1-img-right{
     background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.63)),
-    url('../img/gallery/gente-trabajando3.jpg');
+    url('../img/gallery/gt1.jpg');
     width: 50%;
     background-size: cover;
-    background-position: center;
+    background-position: top left;
 }
 /* ---------------------------------- R2 --- */
 .slogan-r2{ 
@@ -1496,7 +1496,7 @@ font-family: 'Poppins', sans-serif;
     height: 50%;
     
     background-image: linear-gradient(to top, transparent, rgba(61, 61, 61, 0.329)),
-    url('../img/gallery/gente-trabajando5.jpg');
+    url('../img/gallery/gt5.jpg');
     background-size: cover;
     background-position:center;
 }
@@ -1505,8 +1505,9 @@ font-family: 'Poppins', sans-serif;
     height: 50%;
     
     background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.329)),
-    url('../img/gallery/gente-trabajando2.jpg');
+    url('../img/gallery/gt4.jpg');
     background-size: cover;
+    background-position: center;
 }
 
 /* ---------------------------------- r2 RIGHT --- */
@@ -1518,11 +1519,11 @@ font-family: 'Poppins', sans-serif;
 
 .slogan-mic-img{
     
-    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.815)),
-    url('../img/mic-slogan.jpg');
+    background-image: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.415)),
+    url('../img/gallery/gt7.jpg');
     
     background-position: center;
-    
+    background-size: cover;
     height: 100%;
     z-index: 0;
 }
@@ -1539,7 +1540,7 @@ font-family: 'Poppins', sans-serif;
 
 .slogan-r3-img-left{
     background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.623)),
-    url('../img/gallery/gente-trabajando4.jpg');
+    url('../img/gallery/equipos2.jpg');
     width: 42%;
     background-size: cover;
     background-position: center;
@@ -1547,12 +1548,35 @@ font-family: 'Poppins', sans-serif;
 
 .slogan-r3-img-right{
     background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.63)),
-    url('../img/gallery/ana.jpg');
+    url('../img/gallery/equipo3.jpeg');
     width: 58%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slogan-r4{
+    display: flex;
+    height:375px;
+    width: 100%;
+    gap: 5px;
+}
+
+.slogan-r4-img-left{
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.623)),
+    url('../img/gallery/gt3.jpg');
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slogan-r4-img-right{
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.63)),
+    url('../img/gallery/equipos.jpg');
+    width: 30%;
     background-size: cover;
     background-position: top;
 }
-
 
 
 
