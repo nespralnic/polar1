@@ -810,13 +810,15 @@ font-family: 'Poppins', sans-serif;
     }
 }   
 
+/*
 @media (min-width: 1400px) {
     .card-container{
         grid-template-columns: auto auto auto auto auto auto auto auto;
         width: 100%;
         margin: 0 auto;
     }
-}   
+} 
+*/  
 /*
 @media (min-width: 1575px) {
     .card-container{
@@ -1395,6 +1397,173 @@ font-family: 'Poppins', sans-serif;
 }
 
 
+
+/* ---------- G A L L E R Y  ------------------*/
+
+.gallery{
+    position: relative;
+    background-color: rgb(229, 235, 240); 
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('../img/patterns/fondo-logo.jpg');
+
+}
+
+.gallery-banner-verde{
+    position: absolute;
+    top: 0;
+    background-color: rgb(229, 235, 240); 
+    background-color: var(--col6);
+
+    height: 150vh;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.gallery-container{
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 28px;
+    justify-items:center;
+    z-index: 2;
+    width: min-content;
+    margin: 0 auto;
+
+}
+
+.gallery-text{
+    padding: 84px 0 96px 0;
+    font-size: 2em;   
+    line-height: 1.5;
+    color: var(--col7);
+    color: wheat;
+    display: flex;
+
+    background-color: salmon;
+    
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    text-align: center;
+}
+
+.gallery-text-wrapper{
+    z-index: 3;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 660px;
+}
+
+.gallery-img{
+    height: 620px;
+    width: 620px;
+}
+
+.gallery-img img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: center;
+    -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    filter: sepia(100%);
+    transition: 1s;
+    
+}
+
+.gallery-img img:hover{
+    -webkit-filter: sepia(0); /* Safari 6.0 - 9.0 */
+    filter: sepia(0);
+    transition: 1s;
+}
+
+
+@media (min-width: 350px){
+    .gallery-img{
+        height: 330px;
+        width: 330px;
+
+    }    
+}
+
+@media (min-width: 525px){
+    .gallery-img{
+        height: 410px;
+        width: 410px;
+
+    }
+}
+
+@media (min-width: 700px) {
+    .gallery-img{
+        height: 610px;
+        width: 610px;
+    }
+}   
+
+@media (min-width: 875px){
+    .gallery-container{
+        grid-template-columns: auto auto;
+    }
+    
+    .gallery-img{
+        height: 410px;
+        width: 410px;
+    }
+
+    
+}
+
+@media (min-width: 1050px) {
+    .gallery-img{
+        height: 510px;
+        width: 510px;
+    }
+    
+    .gallery-text-wrapper{
+        max-width: 900px;
+    }
+}   
+
+@media (min-width: 1225px) {
+    .gallery-img{
+        height: 600px;
+        width: 600px;
+    }
+}   
+
+@media (min-width: 1400px) {
+    .gallery-img{
+        height: 610px;
+        width: 610px;
+    }
+}   
+/*
+@media (min-width: 1575px) {
+
+}   
+
+@media (min-width: 1750px) {
+
+}   
+
+
+@media (min-width: 1925px) {
+
+}   
+
+@media (min-width: 2100px) {
+
+}   
+
+@media (min-width: 2275px) {
+   
+}   
+
+@media (min-width: 2450px) {
+   
+}
 
 /* ---------- S L O G A N ------------------*/
 
