@@ -200,8 +200,6 @@ function displayMovieCards(amount){
             contenido.innerHTML = deliverPic(arrayPic)
             cardContainer.appendChild(contenido);
             
-            console.log(counterPic)
-            
         },index*100)
             
     }

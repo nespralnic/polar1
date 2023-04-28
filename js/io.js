@@ -1,6 +1,5 @@
 
 const startObserver = () =>{
-    console.log('start observer')
     let observer = new IntersectionObserver(handleIntersect,{});
 
     let target = document.querySelectorAll(".section-title-underline");
@@ -12,7 +11,7 @@ const startObserver = () =>{
     function handleIntersect(entries){
         entries.forEach((entry) => {
             if (entry.isIntersecting){
-                console.log('coming thru');
+                console.log('isIn');
                 entry.target.classList.add("active");
                 let parent = entry.target.parentElement
                 parent.classList.add('active')
@@ -21,5 +20,5 @@ const startObserver = () =>{
 }
 
 document.addEventListener('load', startObserver())
-
+//executes from translator.js
 

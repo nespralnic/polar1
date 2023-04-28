@@ -76,12 +76,26 @@ const translating = (Obj) => {
 
 let currentLanguage = 'esp'
 
+
+let queryParams = new URLSearchParams(window.location.search);
+let queryEntries = queryParams.entries();
+let { lan } = Object.fromEntries(queryEntries);
+
 window.onload = () => {
-    
+
+    //get current language from browser
     let selected = ""    
-    let navLang = navigator.language
-    
-    switch (navLang) {
+    let switchOption = navigator.language
+
+    //get language from queryString
+    let checkQueryManipulation = (lan == 'es' || lan == "en" || lan == "ca" || lan == "fr" || lan == "it")
+    if (lan != 'undefined' && checkQueryManipulation){
+        switchOption = lan
+    }
+
+    console.log(switchOption);
+
+    switch (switchOption) {
         case 'es-ES':
             selected = esp
             currentLanguage = 'esp'
@@ -93,20 +107,28 @@ window.onload = () => {
         case 'ca':
             selected = cat
             currentLanguage = 'cat'
+            break;
         case 'en':
             selected = eng
-            currentLanguage = 'cat'
+            currentLanguage = 'eng'
+            break;
         default:
+            console.log('oy')
             selected = esp
             currentLanguage = 'esp'
             break;
     }
-    console.log(navLang);
+
+    
+
+    console.log(currentLanguage);
+    
     //esp is default
     if (currentLanguage != 'esp'){
         languageButtonsUpdate(currentLanguage)
         translating(selected)
     }
+    startObserver()
 }
 
 // language buttons
