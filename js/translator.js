@@ -137,6 +137,7 @@ function languageButtonsUpdate(lan){
     let divEng = '<div class="box" onclick="translating(eng)"><img src="./img/flag/bandera-eng.PNG" title="English"></div>'
     let divEsp = '<div class="box" onclick="translating(esp)"><img src="./img/flag/bandera-esp.PNG" title="Español"></div>'
     let divCat = '<div class="box" onclick="translating(cat)"><img src="./img/flag/bandera-cat.PNG" title="Catalá"></div>'
+    let divFra = '<div class="box" onclick="translating(fra)"><img src="./img/flag/bandera-fra.PNG" title="François"></div>'
 
     switch (lan) {
         case 'esp':

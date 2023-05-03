@@ -1,5 +1,5 @@
 class Section {
-    constructor(name,msg,top,bottom){
+    constructor(name,msg,top,bottom,fnct){
         this.name = name
         this.element = document.querySelector("."+this.name)
         this.position = this.updatePosition()
@@ -9,9 +9,11 @@ class Section {
         this.top = top
         this.bottom = bottom
         this.once = false
+        this.fnct = fnct
     }
 
     static active = false
+
 
     updateHeight() {
         return this.element.getBoundingClientRect().height
@@ -28,7 +30,7 @@ let leftMenutext = document.querySelector(".left-menu-text")
 // translator adjustements
 let sections = [
     new Section("destacados",{ 'esp' : "MÁS TRABAJOS!", 'eng' : 'MORE PRODUCTIONS!', 'cat' : 'MÉS TREBALLS'
-},0,200),
+},0,200,displayMovieCards()),
     //new Section("slogan","hola",-100,0),
     new Section("equipo", { 'esp' : "Click para BIOs", 'eng' : 'Link to BIOs', 'cat' : 'Link a la BIO'
 },-100,200)
@@ -63,7 +65,7 @@ window.addEventListener("scroll",()=>{
             leftMenutext.innerHTML = e.msg[currentLanguage] 
             
             leftMenu.classList.add("left-menu-appear")
-            
+
         } else if (!Section.active) {
             leftMenu.classList.remove("left-menu-appear")
             if (e.once && !justOnceArray.includes(e.name)){

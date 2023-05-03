@@ -50,6 +50,7 @@ font-family: 'Poppins', sans-serif;
 --col6: #5b847c;
 --col7: #845b63;
 --col8: #675b84;
+--col9: #1e9e85;
 }
 
 /* ---------- G E N E R A L --------------*/
@@ -128,12 +129,12 @@ font-family: 'Poppins', sans-serif;
     transform: translate(0px);
     transition: transform .5s;
 }
-
+/*
 .left-menu-container:hover{
     background-color: var(--col1);
     cursor: pointer;
 }
-
+*/
 @keyframes popleft {
     from{transform: translateX(-500px)}
     to{transform: translateX(0px)}
@@ -393,10 +394,29 @@ font-family: 'Poppins', sans-serif;
     z-index: 10000;
     font-family: 'Secular One', sans-serif;
     color: white;
+    display: flex;
     
 }
 
+.ig-container{
+    height: 23px;
+    width: 23px;
+    margin-right: 8px;
+}
+
+.ig-container-img{
+    height: 23px;
+    width: 23px;
+    opacity: .8;
+}
+
+.ig-container-img:hover{
+    opacity: 1;
+}
+
 .language-box{
+    padding-left: 8px;
+    border-left: 3px solid rgba(255, 255, 255, 0.644);
     display: flex;
     
     column-gap: 5px;
@@ -405,12 +425,14 @@ font-family: 'Poppins', sans-serif;
 .language-box div{
 
     height: 23px;
+    width: 34px;
     
 }
 
 .language-box div img{
-    width: 34px;
-    height: 23px;
+    width: 100%;
+    height: 100%;
+    
     opacity: .7;
 }
 
