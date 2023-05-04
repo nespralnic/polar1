@@ -29,10 +29,24 @@ let leftMenutext = document.querySelector(".left-menu-text")
 // ("html tag","message","top start","bottom end")
 // translator adjustements
 let sections = [
-    new Section("destacados",{ 'esp' : "MÁS TRABAJOS!", 'eng' : 'MORE PRODUCTIONS!', 'cat' : 'MÉS TREBALLS'
-},0,200,displayMovieCards()),
+    new Section("destacados",
+    { 
+    'esp' : "MÁS TRABAJOS!", 
+    'eng' : 'MORE PRODUCTIONS!', 
+    'cat' : 'MÉS TREBALLS!',
+    'fra' : 'PLUS DE TRAVAUX!',
+    'por' : "MAIS TRABALHOS!"
+    }
+    ,0,200,displayMovieCards()),
     //new Section("slogan","hola",-100,0),
-    new Section("equipo", { 'esp' : "Click para BIOs", 'eng' : 'Link to BIOs', 'cat' : 'Link a la BIO'
+    new Section("equipo", 
+    { 
+    'esp' : "Link a BIOs", 
+    'eng' : 'Link to BIOs', 
+    'cat' : 'Link a la BIO',
+    'fra' : 'Link pour le bios',
+    'por' : "Clique para bios"
+
 },-100,200)
 ]
 
