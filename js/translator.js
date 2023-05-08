@@ -58,10 +58,10 @@ let cat = {
     equipoMasInfo3: "més info",
     sloganText: "Diagrama Polar aporta una visió personal, conceptual i narrativa de l'àudio com a element indispensable en el desenvolupament d'una obra audiovisual",
     sectionTitleContacto: 'CONTACTE<div class="section-title-underline active"></div>', 
-    formName: "Nombre",
-    email: "Correo electrónico",
-    repeatEmail: "Repetir correo electrónico",
-    message: "Mensaje",
+    formName: "Nom",
+    email: "E-mail",
+    repeatEmail: "Repetir e-mail",
+    message: "Missatge",
     contactoEnviar: "ENVIAR"
 }
 
@@ -98,7 +98,7 @@ let por = {
     equipoMasInfo1: "mais informações",
     equipoMasInfo2: "mais informações",
     equipoMasInfo3: "mais informações",
-    sloganText: "",
+    sloganText: "Diagrama polar oferece uma visão pessoal, conceitual e narrativa do áudio como elemento indispensável no desenvolvimento de uma obra audiovisual.",
     sectionTitleContacto: 'CONTATO<div class="section-title-underline active"></div>', 
     formName: "Nome",
     email: "E-mail",
@@ -107,6 +107,134 @@ let por = {
     contactoEnviar: "ENVIAR"
 }
 
+let ita = {
+    _language : 'ita',
+    mainTitle1: "SUONO IN PRESA DIRETTA",
+    mainTitle2: "MONTAGGIO E MIX FINALE",
+    sectionTitleDestacados: 'LAVORI<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "Altri lavori!",
+    parallaxSoluciones: "SOLUZIONI",
+    parallaxSonoras: "SONORE",
+    sectionTitleEquipo: 'SOUND DESIGN<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "Più info",
+    equipoMasInfo2: "Più info",
+    equipoMasInfo3: "Più info",
+    sloganText: "Diagrama polar fornisce una visione personale, concettuale e narrativa dell'audio come elemento indispensabile nello sviluppo di un'opera audiovisiva",
+    sectionTitleContacto: 'CONTATT<div class="section-title-underline active"></div>', 
+    formName: "Nome",
+    email: "E-mail",
+    repeatEmail: "Ripetere e-mail",
+    message: "Messaggio",
+    contactoEnviar: "INVIARE"
+}
+
+let ucr = {
+    _language : 'ucr',
+    mainTitle1: 'БЕЗПОСЕРЕДНЄ ОЗВУЧУВАННЯ',
+    mainTitle2: "МОНТАЖ ТА ЗВЕДЕННЯ",
+    sectionTitleDestacados: 'РОБОТИ<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "Більше робіт",
+    parallaxSoluciones: "ЗВУКОВІ ",
+    parallaxSonoras: "РІШЕННЯ",
+    sectionTitleEquipo: 'ЗВУКОВИЙ ДИЗАЙН<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "Більше інформації",
+    equipoMasInfo2: "Більше інформації",
+    equipoMasInfo3: "Більше інформації",
+    sloganText: "Diagrama polar пропонує особисте, концептуальне та наративне бачення аудіо як невід'ємного елементу у створенні аудіовізуального твору",
+    sectionTitleContacto: "ЗВ'ЯЗАТИСЯ З НАМИ<div class='section-title-underline active'></div>", 
+    formName: "Ім'я",
+    email: "E-mail",
+    repeatEmail: "Повторний e-mail",
+    message: "Повідомлення",
+    contactoEnviar: "Надіслати на адресу"
+}
+
+let heb = {
+    _language : 'heb',
+    mainTitle1: "צליל ישיר",
+    mainTitle2: "חינוך ולערבב",
+    sectionTitleDestacados: 'עבודות<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "עוד עבודות",
+    parallaxSoluciones: "סולאריים", 
+    parallaxSonoras: "פתרונות",
+    sectionTitleEquipo: 'עיצוב פסקול<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "מידע נוסף",
+    equipoMasInfo2: "מידע נוסף",
+    equipoMasInfo3: "מידע נוסף",
+    sloganText: "",
+    sectionTitleContacto: 'איש קשר<div class="section-title-underline active"></div>', 
+    formName: "שם ",
+    email: "מייל",
+    repeatEmail: "אימות מייל",
+    message: "הודעה",
+    contactoEnviar: "שליחה"
+}
+
+let chi = {
+    _language : 'chi',
+    mainTitle1: "直接发声",
+    mainTitle2: "编辑和混音",
+    sectionTitleDestacados: '作品<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "更多作品",
+    parallaxSoluciones: "声音解",
+    parallaxSonoras: "决方案",
+    sectionTitleEquipo: '声音设计<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "更多信息",
+    equipoMasInfo2: "更多信息",
+    equipoMasInfo3: "更多信息",
+    sloganText: "Diagrama polar 提供了一个个人的、概念性的和叙事性的视野，将音频作为视听作品发展中不可缺少的元素。",
+    sectionTitleContacto: '联系我们<div class="section-title-underline active"></div>', 
+    formName: "姓名",
+    email: "电子邮件",
+    repeatEmail: "重复电子邮件",
+    message: "留言",
+    contactoEnviar: "发送至"
+}
+
+let eus = {
+    _language : 'eus',
+    mainTitle1: "ZUZENEKO SOINUA",
+    mainTitle2: "EDIZIOA ETA NAHASKETA",
+    sectionTitleDestacados: 'LANAK<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "Lan gehiago!",
+    parallaxSoluciones: "SOINU", 
+    parallaxSonoras: "IRTENBIDEAK",
+    sectionTitleEquipo: 'SOINU DISEINUA<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "Informazio gehiago",
+    equipoMasInfo2: "Informazio gehiago",
+    equipoMasInfo3: "Informazio gehiago",
+    sloganText: "Diagrama polarrek soinuaren ikuspegi personala, kontzeptuala eta narratiboa dakar, ikus-entzunezko lanaren garapenean",
+    sectionTitleContacto: 'KONTACKTUA<div class="section-title-underline active"></div>', 
+    formName: "Izena",
+    email: "Posta elektronikoa",
+    repeatEmail: "Posta elektronikoa errepikatu",
+    message: "Mezua",
+    contactoEnviar: "Bidali"
+}
+
+
+let rus = {
+    _language : 'rus',
+    mainTitle1: "РЕЖИССУРА ЗВУКА",
+    mainTitle2: "РЕДАКТИРОВАНИЕ И МИКШИРОВАНИЕ",
+    sectionTitleDestacados: 'РАБОТЫ<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "Больше работ",
+    parallaxSoluciones: "ЗВУКОВЫЕ", 
+    parallaxSonoras: "РЕШЕНИЯ",
+    sectionTitleEquipo: 'ЗВУКОВОЙ ДИЗАЙН<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "Больше информации",
+    equipoMasInfo2: "Больше информации",
+    equipoMasInfo3: "Больше информации",
+    sloganText: "Diagrama polar предоставляет личное, концептуальное и повествовательное видение аудио как неотъемлемого элемента в разработке аудиовизуального произведения",
+    sectionTitleContacto: 'СВЯЗАТЬСЯ С<div class="section-title-underline active"></div>', 
+    formName: "Имя",
+    email: "Электронная почта",
+    repeatEmail: "Повторить электронную почту",
+    message: "Сообщение",
+    contactoEnviar: "Отправить на"
+}
+
+let forwardMessage = document.getElementById("forward-message")
 
 const translating = (Obj) => {
     currentLanguage = Obj['_language']
@@ -127,6 +255,9 @@ const translating = (Obj) => {
             }
         }   
     })
+
+    forwardMessage.value = 'https://nespralnic.github.io/polar1/home.html?lan=' + currentLanguage + 'scss=1#contacto'
+
 }
 
 let currentLanguage = 'esp'
@@ -136,6 +267,8 @@ let queryParams = new URLSearchParams(window.location.search);
 let queryEntries = queryParams.entries();
 let { lan } = Object.fromEntries(queryEntries);
 
+console.log(lan)
+
 window.onload = () => {
 
     //get current language from browser
@@ -143,7 +276,7 @@ window.onload = () => {
     let switchOption = navigator.language
 
     //get language from queryString
-    let checkQueryManipulation = (lan == 'es' || lan == "en" || lan == "ca" || lan == "fr" || lan == "it")
+    let checkQueryManipulation = (lan == 'esp' || lan == "eng" || lan == "cat" || lan == "fra" || lan == "ita" || lan == "por" || lan == "ucr"|| lan == "heb"|| lan == "chi"|| lan == "eus"|| lan == "rus")
     if (lan != 'undefined' && checkQueryManipulation){
         switchOption = lan
     }
@@ -152,20 +285,56 @@ window.onload = () => {
 
     switch (switchOption) {
         case 'es-ES':
-            selected = esp
-            currentLanguage = 'esp'
-            break;
         case 'es':
+        case 'esp':
             selected = esp
             currentLanguage = 'esp'
             break;
         case 'ca':
+        case 'cat':
             selected = cat
             currentLanguage = 'cat'
             break;
         case 'en':
+        case 'eng':
             selected = eng
             currentLanguage = 'eng'
+            break;
+        case "pt":
+        case "pt-BR":
+        case "por":
+            selected = por
+            currentLanguage = 'por'
+            break;
+        case "it":
+        case "ita":
+            selected = ita
+            currentLanguage = 'ita'
+            break;
+        case 'ucr':
+        case 'uk':
+            selected = ucr
+            currentLanguage = 'ucr'
+            break;
+        case "he":
+        case "heb":
+            selected = heb
+            currentLanguage = 'heb'
+            break;
+        case "zh":
+        case "zh-CN":
+        case "chi":
+            selected = chi
+            currentLanguage = 'chi'
+            break;
+        case "eus":
+            selected = eus
+            currentLanguage = 'eus'
+            break;
+        case "rus":
+        case "ru":
+            selected = rus
+            currentLanguage = 'rus'
             break;
         default:
             console.log('oy')
@@ -188,31 +357,16 @@ window.onload = () => {
 
 // language buttons
 function languageButtonsUpdate(lan){
+    const langs = ['esp','eng', 'cat', 'fra','por','ita','ucr','heb','chi','eus','rus']
+    let content = ""
     let languageBox = document.querySelector('.language-box')
-    let divEng = '<div class="box" onclick="translating(eng)"><img src="./img/flag/bandera-eng.PNG" title="English"></div>'
-    let divEsp = '<div class="box" onclick="translating(esp)"><img src="./img/flag/bandera-esp.PNG" title="Español"></div>'
-    let divCat = '<div class="box" onclick="translating(cat)"><img src="./img/flag/bandera-cat.PNG" title="Catalá"></div>'
-    let divFra = '<div class="box" onclick="translating(fra)"><img src="./img/flag/bandera-fra.PNG" title="François"></div>'
-    let divPor = '<div class="box" onclick="translating(por)"><img src="./img/flag/bandera-por.PNG" title="Portugues"></div>'
 
-    switch (lan) {
-        case 'esp':
-            languageBox.innerHTML = divEng + divCat + divFra + divPor
-            break;
-        case 'eng':
-            languageBox.innerHTML = divEsp + divCat + divFra + divPor
-            break;
-        case 'cat':
-            languageBox.innerHTML = divEsp + divEng + divFra + divPor
-        break;
-        case 'fra':
-            languageBox.innerHTML = divEsp + divEng + divCat + divPor
-        break;
-        case 'por':
-            languageBox.innerHTML = divEsp + divEng + divFra + divCat
-        break;    
-        default:
-            break;
-    }
+    langs.forEach( lng => {
+        if (lng != lan){
+            content += '<div class="box" onclick="translating('+ lng +')"><img src="./img/flag/bandera-'+ lng +'.PNG" title="'+ lng.toUpperCase() +'"></div>'
+        }
+    })
+
+    languageBox.innerHTML = content
 
 }

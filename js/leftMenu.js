@@ -35,7 +35,13 @@ let sections = [
     'eng' : 'MORE PRODUCTIONS!', 
     'cat' : 'MÉS TREBALLS!',
     'fra' : 'PLUS DE TRAVAUX!',
-    'por' : "MAIS TRABALHOS!"
+    'por' : "MAIS TRABALHOS!",
+    'ita' : "ALTRI LABORI!",
+    'ucr' : "БІЛЬШЕ РОБІТ!",
+    'heb' : "עוד עבודות",
+    'chi' : "更多作品",
+    'eus' : "Lan gehiago!",
+    'rus' : "Больше работ"
     }
     ,0,200,displayMovieCards()),
     //new Section("slogan","hola",-100,0),
@@ -43,9 +49,15 @@ let sections = [
     { 
     'esp' : "Link a BIOs", 
     'eng' : 'Link to BIOs', 
-    'cat' : 'Link a la BIO',
+    'cat' : 'Click per BIO',
     'fra' : 'Link pour le bios',
-    'por' : "Clique para bios"
+    'por' : "Clique para bios",
+    'ita' : "Click per bio",
+    'ucr' : "Клацніть, щоб прочитати біографію",
+    'heb' : "לחץ על",
+    'chi' : "点击查看个人简介",
+    'eus' : "Egin klik biorako",
+    'rus' : "Нажмите для биографий"
 
 },-100,200)
 ]

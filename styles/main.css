@@ -399,14 +399,14 @@ font-family: 'Poppins', sans-serif;
 }
 
 .ig-container{
-    height: 23px;
-    width: 23px;
+    height: 51px;
+    width: 51px;
     margin-right: 8px;
 }
 
 .ig-container-img{
-    height: 23px;
-    width: 23px;
+    height: 51px;
+    width: 51px;
     opacity: .8;
 }
 
@@ -417,9 +417,10 @@ font-family: 'Poppins', sans-serif;
 .language-box{
     padding-left: 8px;
     border-left: 3px solid rgba(255, 255, 255, 0.644);
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     
-    column-gap: 5px;
+    gap: 5px;
 }
 
 .language-box div{
@@ -2135,6 +2136,18 @@ font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(to top, #0c4164, black);
     display: flex;
    
+}
+
+.ig-container-footer{
+    height: 23px;
+    width: 23px;
+    padding: 3px 0;
+}
+
+.ig-container-img-footer{
+    height: 23px;
+    width: 23px;
+    opacity: .8;
 }
 
 @media (min-width: 350px){
