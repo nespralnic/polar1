@@ -960,6 +960,7 @@ font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 
+
 .card-container-masinfo-text{
     font-family: 'Encode Sans Condensed', sans-serif;
     text-align: center;
@@ -967,13 +968,17 @@ font-family: 'Poppins', sans-serif;
     border: 1px solid var(--col6);  
     padding: 4px;
     color:var(--col6);
+    width: 100%;
 }
 
 .card-container-masinfo-text:hover{
     /*box-shadow: 0 0 2px 1px white;*/
     background-color: var(--col6);
     color:aliceblue;
+}
 
+.card-container-masinfo.invisible {
+    visibility:hidden;  
 }
 
 

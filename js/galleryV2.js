@@ -186,9 +186,11 @@ function displayMovieCards(amount){
     //check amount
     let picsLeft = totalPic - counterPic
     let button = document.querySelector(".card-container-masinfo")
+    let buttonText = document.querySelector(".card-container-masinfo-text")
     if (amount > picsLeft) {
         amount = picsLeft
-        button.style.display = "none"
+        button.classList.add('invisible')
+    
     } 
 
     for (let index = 0; index < amount; index++) {
