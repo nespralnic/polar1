@@ -3,103 +3,214 @@ let picsBase = [
     {
     "id": 1,
     "url": "./img/pelis/afterthe.jpeg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt6085412/"
     },
     {
     "id": 2,
     "url": "./img/pelis/reygitano.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt3902698/"
     },
         {
     "id": 3,
     "url": "./img/pelis/biutiful.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt1164999/"
     },
     {
     "id": 4,
     "url": "./img/pelis/blackhollow.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt5687424/"
     },   
     {
     "id": 5,
     "url": "./img/pelis/bloodbonding.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt6210096/"
     },
         {
     "id": 6,
     "url": "./img/pelis/contetrencat.jpeg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt9791788/"
     },
     {
     "id": 7,
     "url": "./img/pelis/cruzdelsur.jpeg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt1954353/"
     },
     {
     "id": 8,
     "url": "./img/pelis/diezmil.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt3114132/"
     },
     {
     "id": 9,
     "url": "./img/pelis/elperdido.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt5152982/"
     },
         {
     "id": 10,
     "url": "./img/pelis/exile.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt6594342/"
     },
     {
     "id": 11,
     "url": "./img/pelis/lagallina.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt3172352/"
     },   
     {
     "id": 12,
     "url": "./img/pelis/luz.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://m.imdb.com/title/tt8422618/" 
     },
         {
     "id": 13,
     "url": "./img/pelis/maniac.jpeg",
-    "categories": []
+    "categories": [],
+    "link": "https://m.imdb.com/title/tt5516586/"
     },
     {
     "id": 14,
-    "url": "./img/pelis/monstresdepaper.jpg",
-    "categories": []
+    "url": "./img/pelis/tabus.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt12485250/"
     },
     {
     "id": 15,
     "url": "./img/pelis/nana.jpeg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.filmaffinity.com/es/film669440.html"
     },   
     {
     "id": 16,
     "url": "./img/pelis/plenamar.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2088872/"
     },
-        {
+    {
     "id": 17,
     "url": "./img/pelis/prescindibles.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt3074686/"
     },
     {
     "id": 18,
     "url": "./img/pelis/recursoshumanos.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2243505/"
     },
     {
     "id": 19,
     "url": "./img/pelis/red dress.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt8403520/"
     },
     {
     "id": 20,
     "url": "./img/pelis/todoparecia.jpg",
-    "categories": []
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt3290680/"
     },
+    {
+    "id": 21,
+    "url": "./img/pelis/elsquecallen.jpeg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt12524714/"
+    },
+    {
+    "id": 22,
+    "url": "./img/pelis/elaudifono.jpg",
+    "categories": [],
+    "link": "https://imdb.com/title/tt5135192/"
+    },
+    {
+    "id": 23,
+    "url": "./img/pelis/waterline.png",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2058735/"
+    },
+    {
+    "id": 24,
+    "url": "./img/pelis/leyaley.jpeg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt6904188/"
+    },
+    {
+    "id": 25,
+    "url": "./img/pelis/thecrononaut.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2512754/"
+    },
+    {
+    "id": 26,
+    "url": "./img/pelis/reytuerto.jpeg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt4555674/"
+    },
+    {
+    "id": 27,
+    "url": "./img/pelis/lasconstituyentes.jpeg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2122380/"
+    },
+    {
+    "id": 28,
+    "url": "./img/pelis/passielquepassi.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt1852874/"
+    },
+    {
+    "id": 29,
+    "url": "./img/pelis/loquevaleunpeine.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt5572792/"
+    },
+    {
+    "id": 30,
+    "url": "./img/pelis/retrats.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt5684468/"
+    },
+    {
+    "id": 31,
+    "url": "./img/pelis/casamance.png",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt6297254/"
+    },
+    {
+    "id": 32,
+    "url": "./img/pelis/naughtman.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt1048160/"
+    },
+    {
+    "id": 33,
+    "url": "./img/pelis/nisaah.jpeg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt13260848/"
+    },
+    {
+    "id": 34,
+    "url": "./img/pelis/papagordo.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2102395/"
+    },
+    {
+    "id": 35,
+    "url": "./img/pelis/lescosesgrans.jpg",
+    "categories": [],
+    "link": "https://www.imdb.com/title/tt2981562/"
+    }
+    
 ]
 
 
@@ -133,14 +244,12 @@ let totalPic = arrayPic.length
 
 function deliverPic(arrayPic){
     
-        let x = arrayPic[counterPic]
+        //let x = arrayPic[counterPic]
+        x = picsBase[counterPic]
         counterPic+=1
-        return `<img src="${x}" alt="" class="card-image"></img>`
+        return `<a href="${x.link}" target="_blank">
+        <img src="${x.url}" alt="" class="card-image"></img></a>`
     }
-
-
-
-
 
 let setDisplay = 0
 function displayStartF(){
@@ -213,7 +322,7 @@ function displayMovieCards(amount){
 
 //MAIN
 //print 2 complete rows of initial cards depending on viewport size
-displayMovieCards(8)
+displayMovieCards(14)
 
 
 
