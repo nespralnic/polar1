@@ -122,9 +122,9 @@ let picsBase = [
     },
     {
     "id": 21,
-    "url": "./img/pelis/elsquecallen.jpeg",
+    "url": "./img/pelis/daretodream.png",
     "categories": [],
-    "link": "https://www.imdb.com/title/tt12524714/"
+    "link": "https://daretodream-film.com/"
     },
     {
     "id": 22,
@@ -140,9 +140,9 @@ let picsBase = [
     },
     {
     "id": 24,
-    "url": "./img/pelis/leyaley.jpeg",
+    "url": "./img/pelis/theclimb.jpg",
     "categories": [],
-    "link": "https://www.imdb.com/title/tt6904188/"
+    "link": "https://www.imdb.com/title/tt15082926/"
     },
     {
     "id": 25,
