@@ -41,7 +41,9 @@ let sections = [
     'heb' : "עוד עבודות",
     'chi' : "更多作品",
     'eus' : "Lan gehiago!",
-    'rus' : "Больше работ"
+    'rus' : "Больше работ",
+    'nor' : "Flere jobber",
+    'jap' : "その他のプロジェクト"
     }
     ,0,200,displayMovieCards()),
     //new Section("slogan","hola",-100,0),
@@ -57,8 +59,9 @@ let sections = [
     'heb' : "לחץ על",
     'chi' : "点击查看个人简介",
     'eus' : "Egin klik biorako",
-    'rus' : "Нажмите для биографий"
-
+    'rus' : "Нажмите для биографий",
+    'nor' : "Klikk for bios",
+    'jap' : "Bioを見る"
 },-100,200)
 ]
 

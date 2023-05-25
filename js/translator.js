@@ -155,13 +155,13 @@ let heb = {
     mainTitle2: "חינוך ולערבב",
     sectionTitleDestacados: 'עבודות<div class="section-title-underline active"></div>',
     sectionTitleDestacadosFooter: "עוד עבודות",
-    parallaxSoluciones: "סולאריים", 
-    parallaxSonoras: "פתרונות",
+    parallaxSoluciones: "פתרונות", 
+    parallaxSonoras: "סולאריים",
     sectionTitleEquipo: 'עיצוב פסקול<div class="section-title-underline active"></div>',
     equipoMasInfo1: "מידע נוסף",
     equipoMasInfo2: "מידע נוסף",
     equipoMasInfo3: "מידע נוסף",
-    sloganText: "",
+    sloganText: "Diagrama Polar מספקת חזון אישי, רעיוני ונרטיבי של אודיו כמרכיב חיוני בפיתוח יצירה אורקולית",
     sectionTitleContacto: 'איש קשר<div class="section-title-underline active"></div>', 
     formName: "שם ",
     email: "מייל",
@@ -232,6 +232,48 @@ let rus = {
     repeatEmail: "Повторить электронную почту",
     message: "Сообщение",
     contactoEnviar: "Отправить на"
+}
+
+let nor = {
+    _language : 'nor',
+    mainTitle1: "LIVE LYD",
+    mainTitle2: "REDIGERING OG MIKSING", 
+    sectionTitleDestacados: 'ARBEIDSPLASSER<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "Flere jobber!",
+    parallaxSoluciones: "LYDLØS",
+    parallaxSonoras: "NINGER",
+    sectionTitleEquipo: 'LYDDESIGN<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "Mer informasjon",
+    equipoMasInfo2: "Mer informasjon",
+    equipoMasInfo3: "Mer informasjon",
+    sloganText: "Polardiagram (ikke oversett dette) gir en personlig, konseptuell og narrativ visjon av lyd som et vesentlig element i utviklingen av et audiovisuelt verk",
+    sectionTitleContacto: 'KONTAKT<div class="section-title-underline active"></div>', 
+    formName: "Navn",
+    email: "E-post",
+    repeatEmail: "Gjenta e-post",
+    message: "Beskjed",
+    contactoEnviar: "SENDE"
+}
+
+let jap = {
+    _language : 'jap',
+    mainTitle1: "ロケーションサウンド",
+    mainTitle2: "編集, ミキシング",
+    sectionTitleDestacados: 'プロジェクト<div class="section-title-underline active"></div>',
+    sectionTitleDestacadosFooter: "その他のプロジェクト",
+    parallaxSoluciones: "サウンドソ",
+    parallaxSonoras: "リューション",
+    sectionTitleEquipo: '音響デザイン<div class="section-title-underline active"></div>',
+    equipoMasInfo1: "詳細情報",
+    equipoMasInfo2: "詳細情報",
+    equipoMasInfo3: "詳細情報",
+    sloganText: "は、オーディオビジュアル作品に不可欠な要素であるオーディオの個性的でコンセプチュアル、そして物語的なビジョンを提供しています。",
+    sectionTitleContacto: 'コンタクト<div class="section-title-underline active"></div>', 
+    formName: "名前",
+    email: "メール",
+    repeatEmail: "確認用Eメール",
+    message: "メッセージ",
+    contactoEnviar: "送信"
 }
 
 let forwardMessage = document.getElementById("forward-message")
@@ -336,6 +378,18 @@ window.onload = () => {
             selected = rus
             currentLanguage = 'rus'
             break;
+        case "nor":
+        case "no":
+            selected = nor
+            currentLanguage = 'nor'
+            break;
+        case "ja":
+        case "jpn":
+            selected = jap
+            currentLanguage = 'jap'
+            break;
+        
+        
         default:
             console.log('oy')
             selected = esp
@@ -357,7 +411,7 @@ window.onload = () => {
 
 // language buttons
 function languageButtonsUpdate(lan){
-    const langs = ['esp','eng', 'cat', 'fra','por','ita','ucr','heb','chi','eus','rus']
+    const langs = ['esp','eng', 'cat', 'fra','por','ita','ucr','heb','chi','eus','rus','nor','jap']
     let content = ""
     let languageBox = document.querySelector('.language-box')
 
