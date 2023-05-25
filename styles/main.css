@@ -1939,6 +1939,23 @@ font-family: 'Poppins', sans-serif;
     -webkit-clip-path: ellipse(95% 80% at 66% 98%);
 }
 
+.contacto-icons{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.contacto-icons a i{
+    font-size:34px;
+    color:#a7b2af;
+}
+
+.contacto-icons a i:hover{
+    color:#3f8172;
+}
+
 .contacto-form{
     display: flex;
     flex-direction: column;
