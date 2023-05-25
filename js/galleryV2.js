@@ -248,7 +248,7 @@ function deliverPic(arrayPic){
         x = picsBase[counterPic]
         counterPic+=1
         return `<a href="${x.link}" target="_blank">
-        <img src="${x.url}" alt="" class="card-image"></img></a>`
+        <img src="${x.url}" alt="" loading="lazy" class="card-image"></img></a>`
     }
 
 let setDisplay = 0
