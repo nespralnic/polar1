@@ -152,7 +152,7 @@ let ucr = {
 let heb = {
     _language : 'heb',
     mainTitle1: "צליל ישיר",
-    mainTitle2: "חינוך ולערבב",
+    mainTitle2: "חינוך וערבוב",
     sectionTitleDestacados: 'עבודות<div class="section-title-underline active"></div>',
     sectionTitleDestacadosFooter: "עוד עבודות",
     parallaxSoluciones: "פתרונות", 
